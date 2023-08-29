@@ -1,11 +1,17 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "ALX_MultiTone-Magic",
     "version": "1.0",
     "description": "Change webpage colors ",
     "permissions": ["activeTab"],
-    "browser_action": {
+    "host_permissions": [
+        {
+            "host": "intranet.alxswe.com",
+            "matches": ["https://intranet.alxswe.com/*"]
+        }
+    ],
+    "action": {
+        "default_title": "ALX Intranet themes",
       "default_popup": "public/index.html"
-     
     }
   }
