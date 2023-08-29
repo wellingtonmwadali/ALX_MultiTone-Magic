@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "ALX_MultiTone-Magic",
+    "version": "1.0",
+    "description": "Change webpage colors ",
+    "permissions": ["activeTab"],
+    "browser_action": {
+      "default_popup": "public/index.html"
+     
+    }
+  }
