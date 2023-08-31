@@ -4,10 +4,10 @@
     "version": "1.0",
     "description": "Change webpage colors ",
     "permissions": ["activeTab"],
-    "host_permissions": [
+    "content_scripts": [
         {
-            "host": "intranet.alxswe.com",
-            "matches": ["https://intranet.alxswe.com/*"]
+            "matches": ["https://intranet.alxswe.com/*"],
+            "js": ["public/popup.js"]
         }
     ],
     "action": {

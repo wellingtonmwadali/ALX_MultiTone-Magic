@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ColorGrid.css';
 
 const colors = [
@@ -8,19 +8,33 @@ const colors = [
 ];
 
 const ColorGrid = () => {
+  const [showColors, setShowColors] = useState(false);
+
+  const toggleColors = () => {
+    setShowColors(!showColors);
+  };
+
   return (
     <div className="color-grid">
-      {colors.map((color, index) => (
-        <div
-          key={index}
-          className="color-circle"
-          style={{ backgroundColor: color }}
-        >
-          <span className="color-name">{color}</span>
+      {showColors ? (
+        colors.map((color, index) => (
+          <div
+            key={index}
+            className="color-circle"
+            style={{ backgroundColor: color }}
+            onClick={() => changeBackgroundColor(color)}
+          >
+            <span className="color-name">{color}</span>
+          </div>
+        ))
+      ) : (
+        <div className="instructions" onClick={toggleColors}>
+          Select your theme
         </div>
-      ))}
+      )}
     </div>
   );
 };
 
 export default ColorGrid;
+
