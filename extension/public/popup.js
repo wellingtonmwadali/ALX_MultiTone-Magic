@@ -1,7 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const colorGrid = document.getElementById('color-grid');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import ColorGrid from './Components/ColorGrid'; // Import your ColorGrid component
 
-  colorGrid.addEventListener('click', (event) => {
+document.addEventListener('DOMContentLoaded', () => {
+  const colorGridElement = document.getElementById('color-grid');
+
+  colorGridElement.addEventListener('click', (event) => {
     const color = event.target.style.backgroundColor;
     if (color) {
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
@@ -18,11 +22,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.backgroundColor = color;
   }
 
-  // Initialize the color grid to show colors
-  const app = document.getElementById('app');
+  // Initialize the color grid React component
   const colorGridContainer = document.createElement('div');
   colorGridContainer.setAttribute('id', 'color-grid-container');
-  app.appendChild(colorGridContainer);
+  document.getElementById('app').appendChild(colorGridContainer);
 
-  ReactDOM.render(<ColorGrid/>, colorGridContainer);
+  // Render the ColorGrid component into the container
+  ReactDOM.render(<ColorGrid />, colorGridContainer);
 });
+
