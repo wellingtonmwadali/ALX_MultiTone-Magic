@@ -8,7 +8,7 @@ const colors = [
 ];
 
 const ColorGrid = () => {
-  const [showColors, setShowColors] = useState(false);
+  const [showColors, setShowColors] = useState(true);
 
   const toggleColors = () => {
     setShowColors(!showColors);

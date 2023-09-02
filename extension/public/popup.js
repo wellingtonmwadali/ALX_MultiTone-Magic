@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ColorGrid from './Components/ColorGrid'; // Import your ColorGrid component
+import ColorGrid from './Components/ColorGrid';
 
 document.addEventListener('DOMContentLoaded', () => {
   const colorGridElement = document.getElementById('color-grid');
