@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ColorGrid from './Components/ColorGrid';
+import ColorGrid from './components/ColorGrid';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const colorGridElement = document.getElementById('color-grid');
+  const colorGridElement = document.getElementById('root');
 
   colorGridElement.addEventListener('click', (event) => {
     const color = event.target.style.backgroundColor;

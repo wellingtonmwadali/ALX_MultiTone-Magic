@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './ColorGrid.css';
+import './Color.css';
 
 const colors = [
   'midnightblue', 'darkpink', 'red', 'black',
@@ -13,7 +13,9 @@ const ColorGrid = () => {
   const toggleColors = () => {
     setShowColors(!showColors);
   };
-
+  const changeBackgroundColor = (color) => {
+    document.body.style.backgroundColor = color;
+  };
   return (
     <div className="color-grid">
       {showColors ? (

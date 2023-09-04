@@ -4,7 +4,7 @@ module.exports = {
   entry: './public/popup.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'popup.js',
+    filename: 'popup-bundle.js',
   },
   module: {
     rules: [
@@ -14,6 +14,10 @@ module.exports = {
         use: {
           loader: 'babel-loader',
         },
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
