@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   colorGridElement.addEventListener('click', (event) => {
     const color = event.target.style.backgroundColor;
+    const chrome = window.chrome;
     if (color) {
       chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
         chrome.scripting.executeScript({
