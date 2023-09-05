@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import './Color.css';
 
 const colors = [
-  'midnightblue', 'darkpink', 'red', 'black',
-  'darkteal', 'darkblue', 'darkpurple', 'pink',
-  'lightgreen', 'lightteal', 'lightblue', 'yellow', 'white'
+  'midnightblue', 'grey','black',
+  'teal', 'darkblue', 'purple', 'pink',
+  'lightgreen','lightblue', 'yellow', 'white', 'beige'
 ];
 
 const ColorGrid = () => {
