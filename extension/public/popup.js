@@ -25,8 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize the color grid React component
   const colorGridContainer = document.createElement('div');
   colorGridContainer.setAttribute('id', 'color-grid-container');
-  document.getElementById('app').appendChild(colorGridContainer);
-
+  // Append the color grid div to the 'root' div
+    const rootElement = document.getElementById('root');
+    if (rootElement) {
+      rootElement.appendChild(colorGridContainer);
+    }
   // Render the ColorGrid component into the container
   ReactDOM.render(<ColorGrid />, colorGridContainer);
 });

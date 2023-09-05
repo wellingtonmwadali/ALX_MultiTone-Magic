@@ -5,8 +5,8 @@
   }
   
   .color-circle {
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
