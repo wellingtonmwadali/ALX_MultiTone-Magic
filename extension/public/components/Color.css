@@ -1,9 +1,8 @@
 .color-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 5px;
   }
-  
   .color-circle {
     width: 20px;
     height: 20px;
@@ -14,15 +13,12 @@
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
   }
-  
   .color-circle:hover {
     transform: scale(1.1);
   }
-  
   .color-name {
     display: none;
   }
-  
   .color-circle:hover .color-name {
     display: block;
     position: absolute;
@@ -32,4 +28,3 @@
     padding: 4px 8px;
     border-radius: 4px;
   }
-  
