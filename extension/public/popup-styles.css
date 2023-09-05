@@ -1,0 +1,109 @@
+/* Add this CSS to your external styles.css or in a <style> tag in the <head> of your HTML file */
+
+body {
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: grey;
+    width: 18rem;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-body{
+    background-color: #ccc;
+}
+
+.card-title {
+    color: #333;
+}
+
+.card-head {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-foot {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/*Color Selector*/
+.color-selector {
+    text-align: center;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* This property makes the element a circle */
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin to control the spacing between circles */
+    cursor: pointer;
+    transition: border 0.3s ease-in-out;
+}
+
+/* .color-option.selected {
+    border: 2px solid blue;
+} */
+
+.grey {
+    background-color: #808080;
+}
+
+.light-green {
+    background-color: #90EE90;
+}
+
+.midnight-blue {
+    background-color: #191970;
+}
+.black {
+    background-color: #000000;
+}
+.teal {
+    background-color: #008080;
+}
+.dark-blue {
+    background-color: #00008B;
+}
+.purple {
+    background-color: #800080;
+}
+.pink{
+    background-color: #FFC0CB;
+}
+.light-blue {
+    background-color: #ADD8E6;
+}
+.yellow {
+    background-color: #FFFF00;
+}
+.white {
+    background-color: #FFFFFF;
+}
+.beige {
+    background-color: #F5F5DC;
+}
+
+
+/* Add more color class styles for additional color options */
