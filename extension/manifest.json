@@ -1,17 +1,21 @@
 {
     "manifest_version": 3,
     "name": "ALX_MultiTone-Magic",
-    "version": "1.0",
-    "description": "Change webpage colors ",
+    "version": "1.0.0",
+    "description": "Change Intranet webpage colors ",
     "permissions": ["activeTab"],
     "content_scripts": [
         {
             "matches": ["https://intranet.alxswe.com/*"],
-            "js": ["public/popup.js"]
+            "js": ["public/background.js"]
         }
     ],
     "action": {
         "default_title": "ALX Intranet themes",
       "default_popup": "public/index.html"
+    },
+    "background": {
+      "service_worker": "public/background.js"
     }
+    
   }
