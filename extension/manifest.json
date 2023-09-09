@@ -3,10 +3,14 @@
     "name": "ALX_MultiTone-Magic",
     "version": "1.0.0",
     "description": "Change Intranet webpage colors ",
-    "permissions": ["activeTab"],
+    "permissions": [
+      "activeTab",
+      "scripting"
+  ],
     "content_scripts": [
         {
-            "matches": ["https://intranet.alxswe.com/*"],
+            "matches": ["http://localhost:3000/*",
+            "https://intranet.alxswe.com/*" ],
             "js": ["public/background.js"]
         }
     ],
