@@ -1,21 +1,21 @@
 /* Add this CSS to your external styles.css or in a <style> tag in the <head> of your HTML file */
 
 body {
-    background-color: grey;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 .container {
-    background-color: grey;
+    background-color: #ccc;
     width: 18rem;
     margin: 0 auto;
-    padding: 20px;
+    padding: 0px;
+    border-radius: 8px;
 }
 
 .card {
-    background-color: white;
+    background-color: #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -29,16 +29,16 @@ body {
 }
 
 .card-head {
-    padding: 10px;
+    padding: 0px;
     border-bottom: 1px solid #ccc;
 }
 
 .card-content {
-    padding: 20px;
+    padding: 10px;
 }
 
 .card-foot {
-    padding: 10px;
+    padding: 6px;
     border-top: 1px solid #ccc;
 }
 
@@ -104,6 +104,3 @@ body {
 .beige {
     background-color: #F5F5DC;
 }
-
-
-/* Add more color class styles for additional color options */
