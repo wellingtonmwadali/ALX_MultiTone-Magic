@@ -5,13 +5,14 @@
     "description": "Change Intranet webpage colors ",
     "permissions": [
       "activeTab",
-      "scripting"
+      "scripting",
+      "storage"
   ],
     "content_scripts": [
         {
             "matches": ["http://localhost:3000/*",
             "https://intranet.alxswe.com/*" ],
-            "js": ["public/background.js"]
+            "js": ["public/popup.js"]
         }
     ],
     "action": {

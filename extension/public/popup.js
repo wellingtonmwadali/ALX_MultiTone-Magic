@@ -14,4 +14,32 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// switch icon toggle
+const switchElement = document.getElementById('theme-switch');
+const codeSnippetElement = document.getElementById('codeSnippet');
+
+switchElement.addEventListener('change', function() {
+  if (this.checked) {
+    codeSnippetElement.style.display = 'block';
+  } else {
+    codeSnippetElement.style.display = 'none';
+  }
+});
+
+// When the user selects a theme
+function setTheme(themeName) {
+  document.documentElement.className = themeName;
+  chrome.storage.sync.set({ 'theme': themeName }); //  save selected theme
+}
+
+// When the page loads, the exent it checks the extension's storage for the saved theme
+document.addEventListener('DOMContentLoaded', function() {
+  chrome.storage.sync.get(['theme'], function(result) {
+    const savedTheme = result.theme;
+    if (savedTheme) {
+      setTheme(savedTheme); // If a theme is found, it applies the saved theme
+    }
+  });
+});
+
 
