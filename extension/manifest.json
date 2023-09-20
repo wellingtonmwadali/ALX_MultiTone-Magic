@@ -12,7 +12,11 @@
         {
             "matches": ["http://localhost:3000/*",
             "https://intranet.alxswe.com/*" ],
-            "js": ["public/background.js"]
+            "js": ["public/background.js"],
+            "css": [
+              "public/theme.css"
+          ],
+          "run_at": "document_start"
         }
     ],
     "action": {
