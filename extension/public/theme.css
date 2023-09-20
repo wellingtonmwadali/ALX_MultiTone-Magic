@@ -1,0 +1,92 @@
+/* Theme: Grey */
+.color-option.grey{
+    /* Background colors */
+    --col-bg-400: #dddddd;
+    --col-bg-500: #b0b0b0;
+    --col-bg-600: #999999;
+    --col-bg-700: #777777;
+    --col-bg-800: #555555;
+  
+    /* Bacground color for current date on the Events Calendar */
+    --col-current-date: #888888;
+  
+    /* Bacground color for project in second deadline */
+    --col-second-deadline: #dddddd2b;
+  
+    /* Text color for project link in second deadline */
+    --col-second-deadline-link: #b0b0b0;
+  
+    /* Accent colors */
+    --col-acc-400: #ff0000;
+    --col-acc-500: #cc0000;
+  
+    /* Custom colors */
+    --col-code-color: #0099cc;
+    --col-quiz-pass: #00cc66;
+  
+    /* Colors for the checker */
+    --col-code-pass: #33cc33;
+    --col-code-fail: #ff3300;
+    --col-requirement-pass: #33cc3366;
+    --col-requirement-fail: #ff330066;
+    --col-efficiency-success: #00cc66;
+    --col-efficiency-fail: #ffcc00;
+    --col-answer-success: #0000cc;
+    --col-answer-fail: #cc6600;
+  
+    /* Text colors */
+    --col-light-400: #ffffff;
+    --col-light-500: #cccccc;
+    --col-light-600: #a0a0a0;
+    --col-light-700: #777777;
+    --col-light-800: #555555;
+    --col-bg-clear: transparent;
+  }
+  
+  /* Theme: Light Green */
+  .color-option.light-green {
+    /* Background colors */
+    --col-bg-400: #e6f7e6;
+    --col-bg-500: #c2e6c2;
+    --col-bg-600: #99d699;
+    --col-bg-700: #5cce5c;
+    --col-bg-800: #29b329;
+  
+    /* Bacground color for current date on the Events Calendar */
+    --col-current-date: #66cc66;
+  
+    /* Bacground color for project in second deadline */
+    --col-second-deadline: #e6f7e62b;
+  
+    /* Text color for project link in second deadline */
+    --col-second-deadline-link: #c2e6c2;
+  
+    /* Accent colors */
+    --col-acc-400: #008000;
+    --col-acc-500: #006400;
+  
+    /* Custom colors */
+    --col-code-color: #005599;
+    --col-quiz-pass: #33cc33;
+  
+    /* Colors for the checker */
+    --col-code-pass: #00cc00;
+    --col-code-fail: #ff3300;
+    --col-requirement-pass: #00cc0066;
+    --col-requirement-fail: #ff330066;
+    --col-efficiency-success: #33cc33;
+    --col-efficiency-fail: #ff9900;
+    --col-answer-success: #003366;
+    --col-answer-fail: #cc6600;
+  
+    /* Text colors */
+    --col-light-400: #ffffff;
+    --col-light-500: #cccccc;
+    --col-light-600: #a0a0a0;
+    --col-light-700: #777777;
+    --col-light-800: #555555;
+    --col-bg-clear: transparent;
+  }
+  
+  /* Continue with other theme customizations following the same structure */
+  
