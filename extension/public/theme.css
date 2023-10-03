@@ -1,92 +1,86 @@
-/* Theme: Grey */
-.grey {
-    /* Background colors */
-    --col-bg-400: #dddddd !important;
-    --col-bg-500: #b0b0b0 !important;
-    --col-bg-600: #999999 !important;
-    --col-bg-700: #777777 !important;
-    --col-bg-800: #555555 !important;
-  
-    /* Bacground color for current date on the Events Calendar */
-    --col-current-date: #888888 !important;
-  
-    /* Bacground color for project in second deadline */
-    --col-second-deadline: #dddddd2b !important;
-  
-    /* Text color for project link in second deadline */
-    --col-second-deadline-link: #b0b0b0 !important;
-  
-    /* Accent colors */
-    --col-acc-400: #ff0000 !important;
-    --col-acc-500: #cc0000 !important;
-  
-    /* Custom colors */
-    --col-code-color: #0099cc !important;
-    --col-quiz-pass: #00cc66 !important;
-  
-    /* Colors for the checker */
-    --col-code-pass: #33cc33 !important;
-    --col-code-fail: #ff3300 !important;
-    --col-requirement-pass: #33cc3366 !important;
-    --col-requirement-fail: #ff330066 !important;
-    --col-efficiency-success: #00cc66 !important;
-    --col-efficiency-fail: #ffcc00 !important;
-    --col-answer-success: #0000cc !important;
-    --col-answer-fail: #cc6600 !important;
-  
-    /* Text colors */
-    --col-light-400: #ffffff !important;
-    --col-light-500: #cccccc !important;
-    --col-light-600: #a0a0a0 !important;
-    --col-light-700: #777777 !important;
-    --col-light-800: #555555 !important;
-    --col-bg-clear: transparent !important;
-  }
-  
-  /* Theme: Light Green */
-  .color-option.light-green {
-    /* Background colors */
-    --col-bg-400: #e6f7e6 !important;
-    --col-bg-500: #c2e6c2 !important;
-    --col-bg-600: #99d699 !important;
-    --col-bg-700: #5cce5c !important;
-    --col-bg-800: #29b329 !important;
-  
-    /* Bacground color for current date on the Events Calendar */
-    --col-current-date: #66cc66 !important;
-  
-    /* Bacground color for project in second deadline */
-    --col-second-deadline: #e6f7e62b !important;
-  
-    /* Text color for project link in second deadline */
-    --col-second-deadline-link: #c2e6c2 !important;
-  
-    /* Accent colors */
-    --col-acc-400: #008000 !important;
-    --col-acc-500: #006400 !important;
-  
-    /* Custom colors */
-    --col-code-color: #005599 !important;
-    --col-quiz-pass: #33cc33 !important;
-  
-    /* Colors for the checker */
-    --col-code-pass: #00cc00 !important;
-    --col-code-fail: #ff3300 !important;
-    --col-requirement-pass: #00cc0066 !important;
-    --col-requirement-fail: #ff330066 !important;
-    --col-efficiency-success: #33cc33 !important;
-    --col-efficiency-fail: #ff9900 !important;
-    --col-answer-success: #003366 !important;
-    --col-answer-fail: #cc6600 !important;
-  
-    /* Text colors */
-    --col-light-400: #ffffff !important;
-    --col-light-500: #cccccc !important;
-    --col-light-600: #a0a0a0 !important;
-    --col-light-700: #777777 !important;
-    --col-light-800: #555555 !important;
-    --col-bg-clear: transparent !important;
-  }
-  
-  /* Continue with other theme customizations following the same structure */
-  
+
+  /* Custom CSS Variables */
+:root {
+  /* Background colors */
+  --bg-grey: #ccc;
+  --bg-light-green: #b0e57c;
+  --bg-midnight-blue: #2c3e50;
+
+  --bg-dark: #333;
+  --bg-teal: #17a2b8;
+  --bg-dark-blue: #001f3f;
+  --bg-purple: #8e44ad;
+  --bg-pink: #ff6b81;
+  --bg-light-blue: #3498db;
+  --bg-yellow: #f1c40f;
+  --bg-white: #fff;
+  --bg-beige: #f5f5f5;
+
+  /* Accent colors */
+  --acc-red: #ff0000;
+  --acc-green: #00ff00;
+
+  /* Custom colors */
+  --custom-code-color: #e55039;
+  --custom-quiz-pass: #38b000;
+
+  /* Text colors */
+  --text-light: #fff;
+  --text-dark: #333;
+}
+
+/* Background Colors */
+.color-option.grey {
+  background-color: var(--bg-grey);
+}
+.color-option.light-green {
+  background-color: var(--bg-light-green);
+}
+.color-option.midnight-blue {
+  background-color: var(--bg-midnight-blue);
+}
+
+/* Accent Colors */
+.color-option.black {
+  background-color: var(--bg-dark);
+}
+.color-option.teal {
+  background-color: var(--bg-teal);
+}
+.color-option.dark-blue {
+  background-color: var(--bg-dark-blue);
+}
+.color-option.purple {
+  background-color: var(--bg-purple);
+}
+.color-option.pink {
+  background-color: var(--bg-pink);
+}
+.color-option.light-blue {
+  background-color: var(--bg-light-blue);
+}
+.color-option.yellow {
+  background-color: var(--bg-yellow);
+}
+.color-option.white {
+  background-color: var(--bg-white);
+}
+.color-option.beige {
+  background-color: var(--bg-beige);
+}
+
+/* Text Colors */
+.color-option {
+  color: var(--text-dark);
+}
+.color-option:hover {
+  color: var(--text-light);
+}
+
+/* Add more specific styles for other HTML elements in your page based on your needs */
+
+/* Generic Styles */
+/* Media Queries */
+/* Login Styles */
+/* Navigation Styles */
+/* Main Styles */
