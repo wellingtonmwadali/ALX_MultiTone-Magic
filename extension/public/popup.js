@@ -42,4 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function showColorName(color) {
+  document.getElementById('color-name').innerText = `Color: ${color}`;
+}
 
+function hideColorName() {
+  document.getElementById('color-name').innerText = '';
+}
