@@ -2,18 +2,69 @@
   /* Custom CSS Variables */
 :root {
   /* Background colors */
+  /*grey*/
   --bg-grey: #ccc;
-  --bg-light-green: #b0e57c;
-  --bg-midnight-blue: #2c3e50;
+  --bg-grey-300: lighten(var(--bg-grey), 10%);
+  --bg-grey-400: var(--bg-grey);
 
+  /*lightgreen*/
+  --bg-light-green: #c0f28e;
+  --bg-light-green-300:#f3f7ee;
+  --bg-light-green-400: #daf7bc;
+  --bg-light-green-500: #9ed863;
+
+  /*midnightblue*/
+  --bg-midnight-blue: #709bc7;
+  --bg-midnight-blue-300: lighten(var(--bg-midnight-blue), 10%);
+  --bg-midnight-blue-400: var(--bg-midnight-blue);
+  --bg-midnight-blue-500: darken(var(--bg-midnight-blue), 10%);
+ 
+  /*dark*/
   --bg-dark: #333;
-  --bg-teal: #17a2b8;
+  --bg-dark-300: lighten(var(--bg-dark), 10%);
+  --bg-dark-400: var(--bg-dark);
+  --bg-dark-500: darken(var(--bg-dark), 10%);
+ 
+  /*teal*/
+  --bg-teal: #95e9f6;
+  --bg-teal-300: lighten(var(--bg-teal), 10%);
+  --bg-teal-400: var(--bg-teal);
+  --bg-teal-500: darken(var(--bg-teal), 10%);
+  
+  /*darkblue*/
   --bg-dark-blue: #001f3f;
+  --bg-dark-blue-300: lighten(var(--bg-dark-blue), 10%);
+  --bg-dark-blue-400: var(--bg-dark-blue);
+  --bg-dark-blue-500: darken(var(--bg-dark-blue), 10%);
+  
+  /*purple*/
   --bg-purple: #8e44ad;
+  --bg-purple-300: lighten(var(--bg-purple), 10%);
+  --bg-purple-400: var(--bg-purple);
+  --bg-purple-500: darken(var(--bg-purple), 10%);
+  
+  /*pink*/
   --bg-pink: #ff6b81;
+  --bg-pink-300: lighten(var(--bg-pink), 10%);
+  --bg-pink-400: var(--bg-pink);
+  --bg-pink-500: darken(var(--bg-pink), 10%);
+  
+  /*lightblue*/
   --bg-light-blue: #3498db;
+  --bg-light-blue-300: lighten(var(--bg-light-blue), 10%);
+  --bg-light-blue-400: var(--bg-light-blue);
+  --bg-light-blue-500: darken(var(--bg-light-blue), 10%);
+  
+  /*yellow*/
   --bg-yellow: #f1c40f;
+  --bg-yellow-300: lighten(var(--bg-yellow), 10%);
+  --bg-yellow-400: var(--bg-yellow);
+  --bg-yellow-500: darken(var(--bg-yellow), 10%);
+  
+  /*white*/
   --bg-white: #fff;
+  
+  /*beige*/
   --bg-beige: #f5f5f5;
 
   /* Accent colors */
@@ -27,6 +78,7 @@
   /* Text colors */
   --text-light: #fff;
   --text-dark: #333;
+  --text-red: #e70606;
 }
 
 /* Background Colors */
