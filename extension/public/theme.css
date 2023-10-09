@@ -82,42 +82,43 @@
 }
 
 /* Background Colors */
-.color-option.grey {
+body.color-option.grey {
   background-color: var(--bg-grey);
 }
-.color-option.light-green {
+body.color-option.light-green {
   background-color: var(--bg-light-green);
+  color: #c0f28e;
 }
-.color-option.midnight-blue {
+body.color-option.midnight-blue {
   background-color: var(--bg-midnight-blue);
 }
 
 /* Accent Colors */
-.color-option.black {
+body.color-option.black {
   background-color: var(--bg-dark);
 }
-.color-option.teal {
+body.color-option.teal {
   background-color: var(--bg-teal);
 }
-.color-option.dark-blue {
+body.color-option.dark-blue {
   background-color: var(--bg-dark-blue);
 }
-.color-option.purple {
+body.color-option.purple {
   background-color: var(--bg-purple);
 }
-.color-option.pink {
+body.color-option.pink {
   background-color: var(--bg-pink);
 }
-.color-option.light-blue {
+body.color-option.light-blue {
   background-color: var(--bg-light-blue);
 }
-.color-option.yellow {
+body.color-option.yellow {
   background-color: var(--bg-yellow);
 }
-.color-option.white {
+body.color-option.white {
   background-color: var(--bg-white);
 }
-.color-option.beige {
+body.color-option.beige {
   background-color: var(--bg-beige);
 }
 
@@ -128,4 +129,15 @@
 .color-option:hover {
   color: var(--text-light);
 }
+
+body.color-option.grey main {
+  background-color: var(--bg-grey);
+}
+body.color-option.light-green main{
+  background-color: var(--bg-light-green);
+}
+body.color-option.midnight-blue main{
+  background-color: var(--bg-midnight-blue);
+}
+
 
