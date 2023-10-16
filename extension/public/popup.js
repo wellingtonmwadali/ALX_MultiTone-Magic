@@ -62,5 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('color-name').innerText = '';
   }
 });
-
-
+ mwadali
