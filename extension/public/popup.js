@@ -42,10 +42,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// function showColorName(color) {
-//   document.getElementById('color-name').innerText = `Color: ${color}`;
-// }
 
-// function hideColorName() {
-//   document.getElementById('color-name').innerText = '';
+// // Get the current URL.
+// var url = window.location.href;
+// // Get the background color that the user has selected.
+// var color = localStorage.getItem("backgroundColor");
+// // If the user has not selected a background color, use the default color.
+// if (color === null) {
+//   color = "#ffffff";
 // }
+// // Set the background color of the webpage.
+// document.body.style.backgroundColor = color;
+// // Listen for the user to refresh the page.
+// window.addEventListener("beforeunload", function() {
+//   // Save the background color that the user has selected.
+//   localStorage.setItem("backgroundColor", color);
+// });
