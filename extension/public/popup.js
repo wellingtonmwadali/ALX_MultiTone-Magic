@@ -32,29 +32,17 @@ function setTheme(themeName) {
   chrome.storage.sync.set({ 'theme': themeName }); //  save selected theme
 }
 
-// When the page loads, the exent it checks the extension's storage for the saved theme
+// WheAn the page loads, it checks the extension's storage for the saved theme
 document.addEventListener('DOMContentLoaded', function() {
   chrome.storage.sync.get(['theme'], function(result) {
     const savedTheme = result.theme;
     if (savedTheme) {
       setTheme(savedTheme); // If a theme is found, it applies the saved theme
     }
+    else {
+      setTheme('light'); // If no theme is found, it applies the light theme
+    }
   });
 });
 
 
-// // Get the current URL.
-// var url = window.location.href;
-// // Get the background color that the user has selected.
-// var color = localStorage.getItem("backgroundColor");
-// // If the user has not selected a background color, use the default color.
-// if (color === null) {
-//   color = "#ffffff";
-// }
-// // Set the background color of the webpage.
-// document.body.style.backgroundColor = color;
-// // Listen for the user to refresh the page.
-// window.addEventListener("beforeunload", function() {
-//   // Save the background color that the user has selected.
-//   localStorage.setItem("backgroundColor", color);
-// });
