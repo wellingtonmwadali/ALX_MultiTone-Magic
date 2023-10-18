@@ -1,71 +1,72 @@
 
-  /* Custom CSS Variables */
-:root {
+  /* Custom CSS Variables */:root {
   /* Background colors */
-  /*grey*/
-  --bg-grey: #ccc;
-  --bg-grey-300: lighten(var(--bg-grey), 10%);
-  --bg-grey-400: var(--bg-grey);
 
-  /*lightgreen*/
-  --bg-light-green: #c0f28e;
-  --bg-light-green-300:#f3f7ee;
-  --bg-light-green-400: #daf7bc;
-  --bg-light-green-500: #9ed863;
+  /* Grey */
+  --bg-grey: hsl(0, 0%, 80%);
+  --col-grey-300: hsl(0, 0%, 85%);
+  --bg-grey-400: hsl(0, 0%, 80%);
 
-  /*midnightblue*/
-  --bg-midnight-blue: #709bc7;
-  --bg-midnight-blue-300: lighten(var(--bg-midnight-blue), 10%);
-  --bg-midnight-blue-400: var(--bg-midnight-blue);
-  --bg-midnight-blue-500: darken(var(--bg-midnight-blue), 10%);
- 
-  /*dark*/
-  --bg-dark: #333;
-  --bg-dark-300: lighten(var(--bg-dark), 10%);
-  --bg-dark-400: var(--bg-dark);
-  --bg-dark-500: darken(var(--bg-dark), 10%);
- 
-  /*teal*/
-  --bg-teal: #95e9f6;
-  --bg-teal-300: lighten(var(--bg-teal), 10%);
-  --bg-teal-400: var(--bg-teal);
-  --bg-teal-500: darken(var(--bg-teal), 10%);
-  
-  /*darkblue*/
-  --bg-dark-blue: #001f3f;
-  --bg-dark-blue-300: lighten(var(--bg-dark-blue), 10%);
-  --bg-dark-blue-400: var(--bg-dark-blue);
-  --bg-dark-blue-500: darken(var(--bg-dark-blue), 10%);
-  
-  /*purple*/
-  --bg-purple: #8e44ad;
-  --bg-purple-300: lighten(var(--bg-purple), 10%);
-  --bg-purple-400: var(--bg-purple);
-  --bg-purple-500: darken(var(--bg-purple), 10%);
-  
-  /*pink*/
-  --bg-pink: #ff6b81;
-  --bg-pink-300: lighten(var(--bg-pink), 10%);
-  --bg-pink-400: var(--bg-pink);
-  --bg-pink-500: darken(var(--bg-pink), 10%);
-  
-  /*lightblue*/
-  --bg-light-blue: #3498db;
-  --bg-light-blue-300: lighten(var(--bg-light-blue), 10%);
-  --bg-light-blue-400: var(--bg-light-blue);
-  --bg-light-blue-500: darken(var(--bg-light-blue), 10%);
-  
-  /*yellow*/
-  --bg-yellow: #f1c40f;
-  --bg-yellow-300: lighten(var(--bg-yellow), 10%);
-  --bg-yellow-400: var(--bg-yellow);
-  --bg-yellow-500: darken(var(--bg-yellow), 10%);
-  
-  /*white*/
-  --bg-white: #fff;
-  
-  /*beige*/
-  --bg-beige: #f5f5f5;
+  /* Light Green */
+  --bg-light-green: hsl(90, 80%, 70%);
+  --col-light-green-300: hsl(90, 80%, 75%);
+  --col-light-green-400: hsl(90, 80%, 80%);
+  --col-light-green-500: hsl(90, 80%, 85%);
+
+  /* Midnight Blue */
+  --bg-midnight-blue: hsl(210, 60%, 50%);
+  --col-midnight-blue-300: hsl(210, 60%, 55%);
+  --col-midnight-blue-400: hsl(210, 60%, 50%);
+  --col-midnight-blue-500: hsl(210, 60%, 45%);
+
+  /* Dark */
+  --bg-dark: hsl(0, 0%, 20%);
+  --col-dark-300: hsl(0, 0%, 25%);
+  --bg-dark-400: hsl(0, 0%, 20%);
+  --bg-dark-500: hsl(0, 0%, 15%);
+
+  /* Teal */
+  --bg-teal: hsl(190, 80%, 65%);
+  --bg-teal-300: hsl(190, 80%, 70%);
+  --bg-teal-400: hsl(190, 80%, 65%);
+  --bg-teal-500: hsl(190, 80%, 60%);
+
+  /* Dark Blue */
+  --bg-dark-blue: hsl(210, 100%, 10%);
+  --bg-dark-blue-300: hsl(210, 100%, 15%);
+  --bg-dark-blue-400: hsl(210, 100%, 10%);
+  --bg-dark-blue-500: hsl(210, 100%, 5%);
+
+  /* Purple */
+  --bg-purple: hsl(270, 60%, 50%);
+  --bg-purple-300: hsl(270, 60%, 55%);
+  --bg-purple-400: hsl(270, 60%, 50%);
+  --bg-purple-500: hsl(270, 60%, 45%);
+
+  /* Pink */
+  --bg-pink: hsl(0, 80%, 70%);
+  --bg-pink-300: hsl(0, 80%, 75%);
+  --bg-pink-400: hsl(0, 80%, 70%);
+  --bg-pink-500: hsl(0, 80%, 65%);
+
+  /* Light Blue */
+  --bg-light-blue: hsl(200, 60%, 60%);
+  --bg-light-blue-300: hsl(200, 60%, 65%);
+  --bg-light-blue-400: hsl(200, 60%, 60%);
+  --bg-light-blue-500: hsl(200, 60%, 55%);
+
+  /* Yellow */
+  --bg-yellow: hsl(50, 100%, 50%);
+  --bg-yellow-300: hsl(50, 100%, 55%);
+  --bg-yellow-400: hsl(50, 100%, 50%);
+  --bg-yellow-500: hsl(50, 100%, 45%);
+
+  /* White */
+  --bg-white: hsl(0, 0%, 100%);
+
+  /* Beige */
+  --bg-beige: hsl(30, 40%, 90%);
+
 
   /* Accent colors */
   --acc-red: #ff0000;
@@ -82,42 +83,43 @@
 }
 
 /* Background Colors */
-.color-option.grey {
+body.color-option.grey {
   background-color: var(--bg-grey);
 }
-.color-option.light-green {
+body.color-option.light-green {
   background-color: var(--bg-light-green);
+  color: #c0f28e;
 }
-.color-option.midnight-blue {
+body.color-option.midnight-blue {
   background-color: var(--bg-midnight-blue);
 }
 
 /* Accent Colors */
-.color-option.black {
+body.color-option.black {
   background-color: var(--bg-dark);
 }
-.color-option.teal {
+body.color-option.teal {
   background-color: var(--bg-teal);
 }
-.color-option.dark-blue {
+body.color-option.dark-blue {
   background-color: var(--bg-dark-blue);
 }
-.color-option.purple {
+body.color-option.purple {
   background-color: var(--bg-purple);
 }
-.color-option.pink {
+body.color-option.pink {
   background-color: var(--bg-pink);
 }
-.color-option.light-blue {
+body.color-option.light-blue {
   background-color: var(--bg-light-blue);
 }
-.color-option.yellow {
+body.color-option.yellow {
   background-color: var(--bg-yellow);
 }
-.color-option.white {
+body.color-option.white {
   background-color: var(--bg-white);
 }
-.color-option.beige {
+body.color-option.beige {
   background-color: var(--bg-beige);
 }
 
@@ -129,10 +131,52 @@
   color: var(--text-light);
 }
 
-/* Add more specific styles for other HTML elements in your page based on your needs */
+body.color-option.grey main {
+  background-color: var(--bg-grey);
+  color:var( --bg-grey-300);
+}
+body.color-option.light-green main{
+  background-color: var(--bg-light-green);
+  color:var( --bg-light-green-300);
+}
+body.color-option.midnight-blue main{
+  background-color: var(--bg-midnight-blue);
+  color:var( --bg-midnight-blue-300);
+}
+body.color-option.grey hr {
 
-/* Generic Styles */
-/* Media Queries */
-/* Login Styles */
-/* Navigation Styles */
-/* Main Styles */
+  border-color: var(--col-bg-800) !important;
+}
+
+body.color-option.grey code {
+  background-color: var(--col-bg-400) !important;
+  color: var(--col-code-color) !important;
+}
+
+body.color-option.grey table > thead {
+  background-color: var(--col-bg-clear) !important;
+  border-bottom: 1px solid var(--col-bg-800) !important;
+}
+
+body.color-option.grey a {
+  color: var(--col-acc-500) !important;
+}
+
+body.color-option.grey a i {
+  color: var(--col-light-500) !important;
+}
+
+@media (max-width: 767px) {
+  body.color-option.grey #captains_log_alert {
+    filter: drop-shadow(0 0 10px var(--col-bg-400)) !important;
+  }
+}
+
+body.color-option.grey #search-bar {
+  background-color: var(--col-acc-400) !important;
+}
+
+body.color-option.grey #search-bar::placeholder {
+  color: var(--col-light-500) !important;
+}
+
