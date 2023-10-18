@@ -60,3 +60,27 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('color-name').innerText = '';
   }
 });
+<<<<<<< HEAD
+
+// When the user selects a theme
+function setTheme(themeName) {
+  document.documentElement.className = themeName;
+  chrome.storage.sync.set({ 'theme': themeName }); //  save selected theme
+}
+
+// WheAn the page loads, it checks the extension's storage for the saved theme
+document.addEventListener('DOMContentLoaded', function() {
+  chrome.storage.sync.get(['theme'], function(result) {
+    const savedTheme = result.theme;
+    if (savedTheme) {
+      setTheme(savedTheme); // If a theme is found, it applies the saved theme
+    }
+    else {
+      setTheme('light'); // If no theme is found, it applies the light theme
+    }
+  });
+});
+
+
+=======
+>>>>>>> 87cac565445b9315bcb9abf9fb3374331504b131
