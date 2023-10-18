@@ -12,19 +12,13 @@
         {
             "matches": ["http://localhost:3000/*",
             "https://intranet.alxswe.com/*" ],
-            "js": ["public/background.js"],
-            "css": [
-              "public/theme.css"
-          ],
+            "js": ["public/popup.js"],
+            "css": ["public/theme.css"],
           "run_at": "document_start"
         }
     ],
     "action": {
         "default_title": "ALX Intranet themes",
       "default_popup": "public/index.html"
-    },
-    "background": {
-      "service_worker": "public/background.js"
-    }
-    
+    }    
   }
