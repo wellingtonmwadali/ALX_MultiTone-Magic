@@ -1,66 +1,42 @@
 console.log("Popup script is running!");
-document.addEventListener('DOMContentLoaded', function () {
-  const colorOptions = document.querySelectorAll('.color-option');
-  const switchElement = document.getElementById('theme-switch');
-  const codeSnippetElement = document.getElementById('codeSnippet');
-
-  // Function to set the theme and save it to localStorage
-  function setThemeAndStore(themeName) {
-    document.documentElement.className = themeName;
-    localStorage.setItem('selectedTheme', themeName);
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if a theme is already selected in Local Storage
+  const selectedTheme = localStorage.getItem("selectedTheme");
+  if (selectedTheme) {
+    applyTheme(selectedTheme);
   }
 
-  // Function to retrieve the stored theme from localStorage
-  function getStoredTheme() {
-    return localStorage.getItem('selectedTheme');
-  }
-
-  // Function to apply the stored theme on page load
-  function applyStoredTheme() {
-    const storedTheme = getStoredTheme();
-    if (storedTheme) {
-      setThemeAndStore(storedTheme);
-    }
-  }
-
-  // Apply the stored theme on page load
-  applyStoredTheme();
-
-  // Add an event listener to the theme switch
-  switchElement.addEventListener('change', function () {
-    if (this.checked) {
-      codeSnippetElement.style.display = 'block';
-      localStorage.setItem('themeSwitchState', 'on');
-      const selectedTheme = getStoredTheme();
-      if (selectedTheme) {
-        setThemeAndStore(selectedTheme);
-      }
-    } else {
-      codeSnippetElement.style.display = 'none';
-      localStorage.setItem('themeSwitchState', 'off');
-    }
+  // Activate the extension when the icon is clicked
+  const extensionIcon = document.getElementById("theme-switch");
+  extensionIcon.addEventListener("click", function () {
+    const codeSnippet = document.getElementById("codeSnippet");
+    codeSnippet.style.display = "block";
   });
 
-  // Add a click event listener to each color circle
-  colorOptions.forEach((colorOption) => {
-    colorOption.addEventListener('click', function () {
-      const backgroundColor = window.getComputedStyle(colorOption).backgroundColor;
-      chrome.runtime.sendMessage({ action: 'changeBackgroundColor', color: backgroundColor });
-      localStorage.setItem('backgroundColor', backgroundColor);
+  // Theme Selection
+  const colorOptions = document.querySelectorAll(".color-option");
+  colorOptions.forEach((option) => {
+    option.addEventListener("click", function () {
+      const selectedTheme = option.getAttribute("data-theme");
+      applyTheme(selectedTheme);
+      // Store the selected theme in Local Storage
+      localStorage.setItem("selectedTheme", selectedTheme);
     });
   });
 
-  // Function to show the name of the selected color (not provided in the code).
-  function showColorName(color) {
-    document.getElementById('color-name').innerText = `Color: ${color}`;
-  }
+  // Function to apply the selected theme to the webpage
+  function applyTheme(theme) {
+    const body = document.body;
 
-  // Function to hide the name of the selected color (not provided in the code).
-  function hideColorName() {
-    document.getElementById('color-name').innerText = '';
+    // Remove existing theme classes
+    const themeClasses = ["brown-theme", "light-green-theme", /* Add other theme classes */];
+    body.classList.remove(...themeClasses);
+
+    // Apply the selected theme class
+    body.classList.add(theme);
   }
 });
-<<<<<<< HEAD
+
 
 // When the user selects a theme
 function setTheme(themeName) {
@@ -82,5 +58,4 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-=======
->>>>>>> 87cac565445b9315bcb9abf9fb3374331504b131
+
