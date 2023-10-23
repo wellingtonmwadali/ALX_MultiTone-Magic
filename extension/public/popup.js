@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Theme Selection
-  const colorOptions = document.querySelectorAll(".color-option");
+  const colorOptions = document.querySelector(".color-option");
   colorOptions.forEach((option) => {
     option.addEventListener("click", function () {
       const selectedTheme = option.getAttribute("data-theme");
