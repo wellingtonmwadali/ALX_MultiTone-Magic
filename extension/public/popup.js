@@ -7,8 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Activate the extension when the icon is clicked
-  const extensionIcon = document.getElementById("theme-switch");
-  extensionIcon.addEventListener("click", function () {
+  const themeSwitch = document.getElementById("themeSwitch");
+  themeSwitch.addEventListener("click", function () {
     const codeSnippet = document.getElementById("codeSnippet");
     codeSnippet.style.display = "block";
   });
