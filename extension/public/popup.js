@@ -1,65 +1,61 @@
 console.log("Popup script is running!");
-document.addEventListener('DOMContentLoaded', function () {
-  const colorOptions = document.querySelectorAll('.color-option');
-  const switchElement = document.getElementById('theme-switch');
-  const codeSnippetElement = document.getElementById('codeSnippet');
-
-  // Retrieve the stored theme switch state and selected theme from localStorage
-  const themeSwitchState = localStorage.getItem('themeSwitchState');
-  const selectedTheme = localStorage.getItem('selectedTheme');
-
-  // Apply the stored theme switch state and selected theme on page load
-  if (themeSwitchState === 'on') {
-    codeSnippetElement.style.display = 'block';
-    switchElement.checked = true;
-    if (selectedTheme) {
-      setTheme(selectedTheme); // Apply the saved theme
-    }
-  } else {
-    codeSnippetElement.style.display = 'none';
-    switchElement.checked = false;
+document.addEventListener("DOMContentLoaded", function () {
+  // Check if a theme is already selected in Local Storage
+  const selectedTheme = localStorage.getItem("selectedTheme");
+  if (selectedTheme) {
+    applyTheme(selectedTheme);
   }
 
-  // Add an event listener to the theme switch
-  switchElement.addEventListener('change', function () {
-    if (this.checked) {
-      codeSnippetElement.style.display = 'block';
-      localStorage.setItem('themeSwitchState', 'on');
-      if (selectedTheme) {
-        setTheme(selectedTheme); // Apply the saved theme when the switch is turned on
-      }
-    } else {
-      codeSnippetElement.style.display = 'none';
-      localStorage.setItem('themeSwitchState', 'off');
-    }
+  // Activate the extension when the icon is clicked
+  const themeSwitch = document.getElementById("themeSwitch");
+  themeSwitch.addEventListener("click", function () {
+    const codeSnippet = document.getElementById("codeSnippet");
+    codeSnippet.style.display = "block";
   });
 
-  // Add a click event listener to each color circle
-  colorOptions.forEach((colorOption) => {
-    colorOption.addEventListener('click', function () {
-      const backgroundColor = window.getComputedStyle(colorOption).backgroundColor;
-      chrome.runtime.sendMessage({ action: 'changeBackgroundColor', color: backgroundColor });
-      localStorage.setItem('backgroundColor', backgroundColor);
+  // Theme Selection
+  const colorOptions = document.querySelectorAll(".color-option");
+  colorOptions.forEach((option) => {
+    option.addEventListener("click", function () {
+      const selectedTheme = option.getAttribute("data-theme");
+      applyTheme(selectedTheme);
+      // Store the selected theme in Local Storage
+      localStorage.setItem("selectedTheme", selectedTheme);
     });
   });
 
-  // When the user selects a theme
-  function setTheme(themeName) {
-    document.documentElement.className = themeName;
-    localStorage.setItem('selectedTheme', themeName); // Save the selected theme
-  }
+  // Function to apply the selected theme to the webpage
+  function applyTheme(theme) {
+    const body = document.body;
 
-  // When the page loads, check the extension's storage for the saved theme
-  if (selectedTheme && themeSwitchState === 'on') {
-    setTheme(selectedTheme);
-  }
+    // Remove existing theme classes
+    const themeClasses = ["brown-theme", "light-green-theme", /* Add other theme classes */];
+    body.classList.remove(...themeClasses);
 
-  function showColorName(color) {
-    document.getElementById('color-name').innerText = `Color: ${color}`;
-  }
-
-  function hideColorName() {
-    document.getElementById('color-name').innerText = '';
+    // Apply the selected theme class
+    body.classList.add(theme);
   }
 });
- mwadali
+
+
+// When the user selects a theme
+function setTheme(themeName) {
+  document.documentElement.className = themeName;
+  chrome.storage.sync.set({ 'theme': themeName }); //  save selected theme
+}
+
+// WheAn the page loads, it checks the extension's storage for the saved theme
+document.addEventListener('DOMContentLoaded', function() {
+  chrome.storage.sync.get(['theme'], function(result) {
+    const savedTheme = result.theme;
+    if (savedTheme) {
+      setTheme(savedTheme); // If a theme is found, it applies the saved theme
+    }
+    else {
+      setTheme('light'); // If no theme is found, it applies the light theme
+    }
+  });
+});
+
+
+

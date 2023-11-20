@@ -7,9 +7,9 @@
 }
 .container {
     background-color: #ccc;
+
     border-radius: 8px;
 }
-
 .card-body{
     background-color: #ccc;
 }
@@ -38,13 +38,8 @@
     cursor: pointer;
     transition: border 0.3s ease-in-out;
 }
-
-/* .color-option.selected {
-    border: 2px solid blue;
-} */
-
-.grey {
-    background-color: #808080;
+.brown {
+    background-color: #654365;
 }
 
 .light-green {
