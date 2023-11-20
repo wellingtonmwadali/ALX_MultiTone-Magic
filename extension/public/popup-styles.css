@@ -1,15 +1,14 @@
 /* Add this CSS to your external styles.css or in a <style> tag in the <head> of your HTML file */
 
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: poppins;
 }
-
 .container {
     background-color: #ccc;
-    border-radius: 16px;
-    
+
+    border-radius: 8px;
 }
 .card-body{
     background-color: #ccc;
@@ -21,11 +20,9 @@ body {
 .card-content {
     padding: 10px;
 }
-
-.text-center {
+.contribute-link {
     text-align: center;
 }
-
 
 /*Color Selector*/
 .color-selector {
@@ -80,5 +77,5 @@ body {
     background-color: #F5F5DC;
 }
 #color-name {
-    margin-top: 10px;
+    margin-top: 8px;
 }
