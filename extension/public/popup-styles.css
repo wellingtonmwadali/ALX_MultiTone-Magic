@@ -1,23 +1,13 @@
 /* Add this CSS to your external styles.css or in a <style> tag in the <head> of your HTML file */
 
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: poppins;
 }
-
 .container {
     background-color: #ccc;
-    width: 18rem;
-    margin: 0 auto;
-    padding: 0px;
     border-radius: 8px;
-}
-
-.card {
-    background-color: #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .card-body{
@@ -27,25 +17,12 @@ body {
 .card-title {
     color: #333;
 }
-
-.card-head {
-    padding: 0px;
-    border-bottom: 1px solid #ccc;
-}
-
 .card-content {
     padding: 10px;
 }
-
-.card-foot {
-    padding: 6px;
-    border-top: 1px solid #ccc;
-}
-
-.text-center {
+.contribute-link {
     text-align: center;
 }
-
 
 /*Color Selector*/
 .color-selector {
@@ -105,5 +82,5 @@ body {
     background-color: #F5F5DC;
 }
 #color-name {
-    margin-top: 10px;
+    margin-top: 8px;
 }
