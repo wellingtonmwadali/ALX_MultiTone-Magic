@@ -8,18 +8,9 @@ body {
 
 .container {
     background-color: #ccc;
-    width: 18rem;
-    margin: 0 auto;
-    padding: 0px;
-    border-radius: 8px;
+    border-radius: 16px;
+    
 }
-
-.card {
-    background-color: #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .card-body{
     background-color: #ccc;
 }
@@ -27,19 +18,8 @@ body {
 .card-title {
     color: #333;
 }
-
-.card-head {
-    padding: 0px;
-    border-bottom: 1px solid #ccc;
-}
-
 .card-content {
     padding: 10px;
-}
-
-.card-foot {
-    padding: 6px;
-    border-top: 1px solid #ccc;
 }
 
 .text-center {
@@ -61,11 +41,6 @@ body {
     cursor: pointer;
     transition: border 0.3s ease-in-out;
 }
-
-/* .color-option.selected {
-    border: 2px solid blue;
-} */
-
 .brown {
     background-color: #654365;
 }
