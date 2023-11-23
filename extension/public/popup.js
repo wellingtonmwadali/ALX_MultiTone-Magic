@@ -21,18 +21,17 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Add an event listener to the theme switch
-  switchElement.addEventListener('change', function () {
-    if (this.checked) {
-      codeSnippetElement.style.display = 'block';
-      localStorage.setItem('themeSwitchState', 'on');
-      if (selectedTheme) {
-        setTheme(selectedTheme); // Apply the saved theme when the switch is turned on
-      }
-    } else {
-      codeSnippetElement.style.display = 'none';
-      localStorage.setItem('themeSwitchState', 'off');
-    }
-  });
+  //switchElement.addEventListener('change', function () {
+    //if (this.checked) {
+      //codeSnippetElement.style.display = 'block';
+      //localStorage.setItem('themeSwitchState', 'on');
+      //if (selectedTheme) {
+        //setTheme(selectedTheme); // Apply the saved theme when the switch is turned on
+      //}
+    //} else {
+      //codeSnippetElement.style.display = 'none';
+      //localStorage.setItem('themeSwitchState', 'off');
+    //}});
 
   // Add a click event listener to each color circle
   colorOptions.forEach((colorOption) => {
@@ -62,4 +61,4 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('color-name').innerText = '';
   }
 });
- mwadali
+
