@@ -11,9 +11,8 @@
     "content_scripts": [
         {
             "matches": ["https://intranet.alxswe.com/*" ],
-            "js": ["public/popup.js"],
-            "css": ["public/theme.css"],
-          "run_at": "document_start"
+            "js": ["public/content.js"],
+            "css": ["public/theme.css"]
         }
     ],
     "action": {
