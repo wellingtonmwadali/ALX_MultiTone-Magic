@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
       const themeClassName = `theme-${color}`;
       document.body.classList.add(themeClassName);
       localStorage.setItem('currentTheme', color);
+      console.log('Selected theme:', color);
+
+       // Send a message to the content script
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+        chrome.tabs.sendMessage(tabs[0].id, {action: 'applyTheme', theme: color});
+    });
   }
 
   function resetTheme() {
