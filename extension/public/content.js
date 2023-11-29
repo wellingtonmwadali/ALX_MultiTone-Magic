@@ -1,27 +1,29 @@
 // content.js
 
-// Function to apply the theme
 function applyTheme(theme) {
     if (theme) {
         document.body.classList.add(`theme-${theme}`);
     }
     else {
-        console.log('No theme found in localStorage.');
+        console.log("error in loading theme");
     }
 }
 
-// Listen for messages from the popup
-chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-    if (request.action === 'applyTheme') {
-        applyTheme(request.theme);
+// Listen for changes in the theme or mode
+chrome.storage.onChanged.addListener(function(changes, namespace) {
+    if (changes.currentTheme) {
+        applyTheme(changes.currentTheme.newValue);
     }
 });
 
 // Apply theme on page load
-applyTheme(localStorage.getItem('currentTheme'));
+chrome.storage.local.get(['currentTheme'], function(result) {
+    applyTheme(result.currentTheme);
+});
 
 
 
 
 
-  
+
+

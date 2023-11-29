@@ -8,11 +8,15 @@
       "scripting",
       "storage"
   ],
+  "background": {
+    "service_worker": "public/background.js"
+  },
     "content_scripts": [
         {
             "matches": ["https://intranet.alxswe.com/*" ],
             "js": ["public/content.js"],
-            "css": ["public/theme.css"]
+            "css": ["public/theme.css"],
+            "run_at": "document_idle"
         }
     ],
     "action": {
