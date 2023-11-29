@@ -8,7 +8,12 @@ body.theme-light-green {
   background-color: #90ee90;
 }
 body.light-green.sidebar {
-  background-color: green !important;
+  color: green !important;
   border-right: none !important;
 }
 /* Other theme classes */
+body.theme-pink {
+  color:black;
+  background-color: pink;
+  
+}
