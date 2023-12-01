@@ -1,3 +1,58 @@
+:root {
+  /* Colors for the dark theme */
+  /* Background colors black*/
+  --col-bg-400: #121212;
+  --col-bg-500: #1e1f22;
+  --col-bg-600: #2b2d31;
+  --col-bg-700: #313338;
+  --col-bg-800: #383a40;
+
+  /*pink*/
+  --pink-col-bg-300: #ffc6d0;
+  --pink-col-bg-400: #FF9AA2;
+  --pink-col-bg-500: #fd939e;
+  --pink-col-bg-600: #fe8490;
+  --pink-col-bg-700: #FF355B;
+  
+
+  /* Bacground color for current date on the Events Calendar */
+  --col-current-date: #888672;
+
+  /* Bacground color for project in second deadline */
+  --col-second-deadline: #ff00002b;
+
+  /* Text color for project link in second deadline */
+  --col-second-deadline-link: #c8bfbf;
+
+  /* Accent colors */
+  --col-acc-400: #f8f5f5;
+  --col-acc-500: #f6f2f2;
+  --col-acc-600: #151515;
+
+
+  /* Custom colors*/
+  --col-code-color: #e55039;
+  --col-quiz-pass: #38b000;
+
+  /* Colors for the checker */
+  --col-code-pass: #284724;
+  --col-code-fail: #521b1b;
+  --col-requirement-pass: #28472466;
+  --col-requirement-fail: #521b1b66;
+  --col-efficiency-success: #291531;
+  --col-efficiency-fail: #7d6e18;
+  --col-answer-success: #151a48;
+  --col-answer-fail: #774e1d;
+
+  /* Text colors */
+  --col-light-400: #fff;
+  --col-light-500: #ddd3d3;
+  --col-light-600: #a79a9a;
+  --col-light-700: #837a7a;
+  --col-light-800: #746d6d;
+  --col-bg-clear: transparent;
+}
+
 body.theme-white {
   color: white;
   background-color: white;
@@ -11,9 +66,152 @@ body.light-green.sidebar {
   color: green !important;
   border-right: none !important;
 }
-/* Other theme classes */
+/* PINK THEME*/
 body.theme-pink {
-  color:black;
-  background-color: pink;
-  
+  background-color: var(--pink-col-bg-600);
 }
+
+body.theme-pink main{
+  background-color: var(--pink-col-bg-600);
+}
+
+body.theme-pink hr{
+  border-color: var(--pink-col-bg-600);
+}
+
+body.theme-pink table > thead {
+  background-color: var(--pink-col-bg-400) !important;
+  border-bottom: 1px solid var(--col-bg-800) !important;
+}
+
+body.theme-pink #search-bar::placeholder {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-pink .alert-danger {
+  background-color: var(--pink-col-bg-400) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+
+body.theme-pink .field_with_errors {
+  color: var(--col-acc-500) !important;
+}
+
+/* Login*/
+body.theme-pink .logged_out_form {
+  background-color: var(--pink-col-bg-500) !important;
+  border: 1px solid var(--pink-col-bg-500) !important;
+  box-shadow: 0 0 var(--col-bg-clear) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .hbtn_logo {
+  filter: invert(1);
+  transform: rotate(0deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  11% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Navigation styles */
+body.theme-pink .logo-container {
+  background-color: var(--pink-col-bg-500) !important;
+  border-right: none !important;
+  border-bottom-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .sidebar > ul > li:last-child {
+  background-color: var(--pink-col-bg-500) !important;
+  border-right: none !important;
+  border-top-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .sidebar {
+  background-color: var(--pink-col-bg-500) !important;
+  border-right: none !important;
+  box-shadow: 0 0 1px 5px var(--pink-col-bg-500);
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink.logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.theme-pink .navbar-header {
+  background-color: var(--pink-col-bg-500) !important;
+  filter: drop-shadow(0 0 5px var(--pink-col-bg-500));
+}
+
+body.theme-pink .navbar {
+  border: none !important;
+}
+
+body.theme-pink .navbar-toggle {
+  border-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .navbar-default .navbar-toggle:hover,
+body.theme-pink .navbar-default .navbar-toggle:focus {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .icon-bar {
+  background-color: var(--col-bg-800) !important;
+}
+
+body.theme-pink .navbar-collapse {
+  background-color: var(--pink-col-bg-500) !important;
+  border-top: none !important;
+}
+
+body.theme-pink .nav.navbar-nav {
+  margin-top: 0 !important;
+}
+
+body.theme-pink .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 5px;
+  transform: rotate(45deg) translateY(100%);
+}
+
+body.theme-pink .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+body.theme-pink .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  bottom: 4px;
+  transform: rotate(-45deg) translateY(-100%);
+}
+
+body.theme-pink .navigation > ul > li a .image,
+body.theme-pink .navigation > ul > li a .icon {
+  transition: background-color 200ms ease, color 200ms ease, transition 200ms;
+}
+
+body.theme-pink .discord {
+  transition: transform 300ms ease-in-out, background-color 300ms ease !important;
+}
+
+body.theme-pink .navbar-fixed-top > .navigation > ul > li {
+  margin: 0 !important;
+}
+
+body.theme-pink .navbar-fixed-top > .navigation > ul > li > a {
+  padding: 13px 13px !important;
+}
+
+/* PINK MAIN STYLES*/
