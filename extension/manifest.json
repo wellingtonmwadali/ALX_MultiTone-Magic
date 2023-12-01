@@ -21,6 +21,16 @@
     ],
     "action": {
         "default_title": "ALX Intranet themes",
-      "default_popup": "public/index.html"
-    }    
-  }
+        "default_popup": "public/index.html",
+        "default_icon": {
+          "16": "public/icons/small.png",
+          "32": "public/icons/medium.png",
+          "128": "public/icons/large.png"
+        }
+      },
+      "icons": {
+        "16": "public/icons/small.png",
+        "32": "public/icons/medium.png",
+        "128": "public/icons/large.png"
+      }
+  }    
