@@ -215,3 +215,104 @@ body.theme-pink .navbar-fixed-top > .navigation > ul > li > a {
 }
 
 /* PINK MAIN STYLES*/
+body.theme-pink .user-select-none {
+  box-shadow: 0 0 10px 2px var(--col-light-500) !important;
+}
+
+body.theme-pink .list-group-item {
+  border: none !important;
+}
+
+body.theme-pink a.list-group-item {
+  color: var(--col-acc-600) !important;
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink button.list-group-item {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-pink .panel li.list-group-item {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .text-muted {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .alert-info {
+  background-color: var(--pink-col-bg-700) !important;
+  color: var(--col-light-500) !important;
+  border: none !important;
+}
+
+body.theme-pink .label-default {
+  background-color: var(--col-quiz-pass) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.theme-pink .panel-default > .panel-heading {
+  border-bottom: 1px solid var(--pink-col-bg-700) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .panel-group > .panel-default:first-child > .panel-heading {
+  border: none !important;
+}
+
+body.theme-pink .panel-heading {
+  background-color: var(--pink-col-bg-300) !important;
+  border: none !important;
+}
+
+body.theme-pink .panel {
+  box-shadow: 2px 2px 1px 1px var(--pink-col-bg-300) !important;
+  background-color: var(--pink-col-bg-300) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .panel-title {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink i.panel-title-icon {
+  background-color: var(--pink-col-bg-300) !important;
+  border: 1px solid var(--col-light-500) !important;
+}
+
+body.theme-pink .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: none !important;
+}
+
+body.theme-pink .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .table > thead > tr > th {
+  border-bottom: none !important;
+}
+body.theme-pink .modal-content {
+  background-color: var(--pink-col-bg-300) !important;
+}
+body.theme-pink .modal-body #search-error-message {
+  color: var(--col-acc-600) !important;
+}
+body.theme-pink a {
+  transition: color 200ms ease;
+}
+
+body.theme-pink .modal-footer {
+  border-top: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink a:hover {
+  color: var(--col-light-500) !important;
+  text-decoration: none !important;
+}
+
+body.theme-pink .border-white {
+  border-color: var(--pink-col-bg-700) !important;
+}
+
+
