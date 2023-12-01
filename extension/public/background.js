@@ -1,5 +1,4 @@
-// background.js
-
+//Set receiving end for popup.js when user changes theme
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     if (request.action === 'setTheme') {
         // Update the stored theme
