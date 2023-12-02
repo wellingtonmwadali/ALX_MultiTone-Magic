@@ -15,8 +15,8 @@
   --pink-col-bg-700: #FF355B;
   
 
-  /* Bacground color for current date on the Events Calendar */
-  --col-current-date: #888672;
+  /* Background color for current date on the Events Calendar */
+  --pink-col-current-date: #d5f9adf2;
 
   /* Bacground color for project in second deadline */
   --col-second-deadline: #ff00002b;
@@ -24,7 +24,7 @@
   /* Text color for project link in second deadline */
   --col-second-deadline-link: #c8bfbf;
 
-  /* Accent colors */
+  /* Global accent colors */
   --col-acc-400: #f8f5f5;
   --col-acc-500: #f6f2f2;
   --col-acc-600: #151515;
@@ -97,6 +97,10 @@ body.theme-pink .alert-danger {
 
 body.theme-pink .field_with_errors {
   color: var(--col-acc-500) !important;
+}
+
+body.theme-pink #student-switch-curriculum {
+  background-color: var(--pink-col-bg-400) !important;
 }
 
 /* Login*/
@@ -242,7 +246,7 @@ body.theme-pink .text-muted {
 
 body.theme-pink .alert-info {
   background-color: var(--pink-col-bg-700) !important;
-  color: var(--col-light-500) !important;
+  color: var(--col-acc-600) !important;
   border: none !important;
 }
 
@@ -298,6 +302,7 @@ body.theme-pink .modal-content {
 body.theme-pink .modal-body #search-error-message {
   color: var(--col-acc-600) !important;
 }
+
 body.theme-pink a {
   transition: color 200ms ease;
 }
@@ -307,12 +312,209 @@ body.theme-pink .modal-footer {
 }
 
 body.theme-pink a:hover {
-  color: var(--col-light-500) !important;
+  color: var(--col-acc-600) !important;
   text-decoration: none !important;
 }
 
-body.theme-pink .border-white {
-  border-color: var(--pink-col-bg-700) !important;
+body.theme-pink .close {
+  color: var(--col-acc-600) !important;
+  opacity: 1;
+}
+
+body.theme-pink .close:hover {
+  color: var(--col-light-500) !important;
+}
+
+/* PINK THEME EVENTS SECTION */
+
+body.theme-pink .nav-tabs {
+  border-bottom: 1px solid var(--pink-col-bg-700) !important;
+}
+body.theme-pink .nav-tabs > li > a:hover{
+  border: 1px solid var(--pink-col-bg-700) !important;
+}
+body.theme-pink .nav > li > a {
+  background-color: var(--pink-col-bg-300) !important;
+  color: var(--col-acc-600);
+}
+
+body.theme-pink .nav > li > a:hover {
+  background-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .nav-tabs > li.active > a {
+  background-color: var(--pink-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .btn-default {
+  background-color: var(--pink-col-bg-300) !important;
+  border: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .btn-default:hover .fa {
+  background-color: var(--pink-col-bg-700) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink button.btn-default {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .task-card .btn-default:hover .fa {
+  border: none !important;
+}
+
+/* PINK THEME PLANNING SECTION */
+
+body.theme-pink .dhx_cal_container {
+  background-color: var(--pink-col-bg-500) !important;
+  filter: drop-shadow(0 1px 2px var(--pink-col-bg-700)) !important;
+}
+
+body.theme-pink .dhx_now .dhx_month_body {
+  background-color: var(--pink-col-current-date) !important;
+}
+
+body.theme-pink .dhx_now .dhx_month_head {
+  background-color: var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_before .dhx_month_body {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .dhx_after .dhx_month_body {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .dhx_after .dhx_month_head {
+  background-color: var(--pink-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .dhx_month_head {
+  background-color: var(--pink-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+  border-right-color: var(--pink-col-bg-700);
+}
+
+body.theme-pink .dhx_month_body {
+  background-color: var(--pink-col-bg-300) !important;
+  border-right: 1px solid var(--pink-col-bg-600) !important;
+  border-bottom: 1px solid var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_cal_navline {
+  background-color: var(--pink-col-bg-600);
+}
+
+body.theme-pink .dhx_cal_navline div {
+  color: var(--col-acc-600) !important;
 }
 
 
+body.theme-pink .dhx_cal_prev_button,
+body.theme-pink .dhx_cal_next_button {
+  filter: invert(1);
+}
+
+body.theme-pink .dhx_cal_today_button {
+  border-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .dhx_cal_navline .dhx_cal_tab.active,
+body.theme-pink .dhx_cal_navline .dhx_cal_my_button.active {
+  background-color: var(--col-acc-400) !important;
+  border-color: var(--col-acc-400) !important;
+}
+
+body.theme-pink .dhx_cal_tab {
+  border-color: var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_cal_my_button {
+  border-color: var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_scale_bar {
+  background-color: var(--pink-col-bg-600) !important;
+  color: var(--col-li) !important;
+  border-left-color: var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_cal_header {
+  border: 1px solid var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_cal_event_line,
+body.theme-pink .dhx_cal_event_clear,
+body.theme-pink .dhx_body,
+body.theme-pink .dhx_title,
+body.theme-pink .dhx_footer {
+  color: var(--col-light-400) !important;
+  text-shadow: 0 0 10px #000;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  ) !important;
+}
+
+/*PINK THEME EVENTS SECTION*/
+body.theme-pink .event {
+  color: var(--col-acc-600) !important;
+}
+
+/* Daily & Weekly view */
+body.theme-pink .dhx_scale_bar {
+  background-color: var(--pink-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+  border-left: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .dhx_multi_day {
+  background-color: var(--pink-col-bg-300) !important;
+  border-top: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .dhx_multi_day_icon {
+  background-color: var(--pink-col-bg-600) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--pink-col-bg-700) !important;
+  border-right: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .dhx_multi_day_icon_small {
+  background-color: var(--pink-col-bg-600) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--pink-col-bg-700) !important;
+  border-right: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .dhx_scale_holder_now {
+  border-right: 1px solid var(--col-acc-600) !important;
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .dhx_scale_holder {
+  background-color: var(--pink-col-bg-300) !important;
+  background-blend-mode: multiply;
+  border-right: 1px solid var(--pink-col-bg-600) !important;
+}
+
+body.theme-pink .dhx_scale_hour {
+  background-color: var(--pink-col-bg-500) !important;
+  border-bottom: 1px solid var(--pink-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+}
+
+/* PINK THEME SANDBOX STYLES */
+body.theme-pink .btn-danger {
+  background-color: var(--pink-col-bg-400) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.theme-pink .btn-warning {
+  color: var(--col-bg-400) !important;
+}
