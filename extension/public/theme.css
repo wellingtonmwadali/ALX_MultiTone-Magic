@@ -1,19 +1,93 @@
 :root {
-  /* Colors for the dark theme */
-  /* Background colors black*/
+  /* FONT COLORS*/
   --col-bg-400: #121212;
   --col-bg-500: #1e1f22;
   --col-bg-600: #2b2d31;
-  --col-bg-700: #313338;
-  --col-bg-800: #383a40;
 
-  /*pink*/
+/*THEME COLOR PALETTE*/
+  /*RED THEME*/
+  --red-col-bg-400: #FFEADD;
+  --red-col-bg-500: #FCAEAE;
+  --red-col-bg-600: #FF8989;
+  --red-col-bg-700: #FF6666;
+  --red-col-bg-800: #f83939;
+
+  /*BEIGE THEME*/
+  --beige-col-bg-400: #fdf7e4;
+  --beige-col-bg-500: #faeed1;
+  --beige-col-bg-600: #DED0B6;
+  --beige-col-bg-700: #BBAB8C;
+  --beige-col-bg-800: #c2963f;
+
+  /*NAVY BLUE THEME*/
+  --navy-col-bg-400: #C5DFF8;
+  --navy-col-bg-500: #A0BFE0;
+  --navy-col-bg-600: #7895CB;
+  --navy-col-bg-700: #4A55A2;
+  --navy-col-bg-800: #18289e;
+
+  /*OCEAN BLUE THEME*/
+  --ocean-col-bg-400: #CDF5FD;
+  --ocean-col-bg-500: #A0E9FF;
+  --ocean-col-bg-600: #89CFF3;
+  --ocean-col-bg-700: #00A9FF;
+  --navy-col-bg-800: #012c42e4;
+
+  /*PURPLE THEME*/
+  --purple-col-bg-400: #dbcef7;
+  --purple-col-bg-500: #ccaafc;
+  --purple-col-bg-600: #bc88fa;
+  --purple-col-bg-700: #b362fa;
+  --purple-col-bg-800: #8907fa;
+
+  /*GREEN THEME*/
+  --green-col-bg-400: #dcfcd1;
+  --green-col-bg-500: #c1e2ae;
+  --green-col-bg-600: #90d2a8;
+  --green-col-bg-700: #86a789;
+  --green-col-bg-800: #86a789;
+
+  /*YELLOW THEME*/
+  --yellow-col-bg-400: #f7e6a8;
+  --yellow-col-bg-500: #fde385;
+  --yellow-col-bg-600: #fbd85d;
+  --yellow-col-bg-700: #f1c93b;
+  --yellow-col-bg-800: #fac403;
+
+  /*PINK THEME*/
   --pink-col-bg-300: #ffc6d0;
   --pink-col-bg-400: #FF9AA2;
   --pink-col-bg-500: #fd939e;
   --pink-col-bg-600: #fe8490;
   --pink-col-bg-700: #FF355B;
   
+  /*BLACK THEME*/
+  --black-col-bg-400: #121212;
+  --black-col-bg-500: #1e1f22;
+  --black-col-bg-600: #2b2d31;
+  --black-col-bg-700: #313338;
+  --black-col-bg-800: #383a40;
+
+  /*ORANGE THEME*/
+  --orange-col-bg-400: #ffbb5c;
+  --orange-col-bg-500: #ff9b50;
+  --orange-col-bg-600: #f98365;
+  --orange-col-bg-700: #fc6b47;
+  --orange-col-bg-800: #c63d2f;
+
+  /*GREY THEME */
+  --grey-col-bg-400: #d1c0b3;
+  --grey-col-bg-500: #cdbda1;
+  --grey-col-bg-600: #bbab8e;
+  --grey-col-bg-700: #726350;
+  --grey-col-bg-800: #5d3404;
+
+  /*TEAL THEME*/
+  --teal-col-bg-400: #b9eddd;
+  --teal-col-bg-500: #87cbb9;
+  --teal-col-bg-600: #569daa;
+  --teal-col-bg-700: #577d86;
+  --teal-col-bg-800: #067189;
 
   /* Background color for current date on the Events Calendar */
   --pink-col-current-date: #d5f9adf2;
