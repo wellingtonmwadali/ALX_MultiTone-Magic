@@ -19,7 +19,7 @@
   --pink-col-current-date: #d5f9adf2;
 
   /* Bacground color for project in second deadline */
-  --col-second-deadline: #ff00002b;
+  --col-second-deadline: #e4f6dbf6;
 
   /* Text color for project link in second deadline */
   --col-second-deadline-link: #c8bfbf;
@@ -35,14 +35,11 @@
   --col-quiz-pass: #38b000;
 
   /* Colors for the checker */
-  --col-code-pass: #284724;
-  --col-code-fail: #521b1b;
-  --col-requirement-pass: #28472466;
-  --col-requirement-fail: #521b1b66;
-  --col-efficiency-success: #291531;
-  --col-efficiency-fail: #7d6e18;
-  --col-answer-success: #151a48;
-  --col-answer-fail: #774e1d;
+  --col-code-pass: #cef4c9;
+  --col-requirement-pass: #bcdeb766;
+  --col-efficiency-success: #51f5e2;
+  --col-answer-success: #a2fb96;
+
 
   /* Text colors */
   --col-light-400: #fff;
@@ -237,6 +234,10 @@ body.theme-pink button.list-group-item {
 }
 
 body.theme-pink .panel li.list-group-item {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .list-group-item {
   background-color: var(--pink-col-bg-300) !important;
 }
 
@@ -512,9 +513,222 @@ body.theme-pink .dhx_scale_hour {
 /* PINK THEME SANDBOX STYLES */
 body.theme-pink .btn-danger {
   background-color: var(--pink-col-bg-400) !important;
-  color: var(--col-light-500) !important;
+  color: var(--col-acc-600) !important;
 }
 
 body.theme-pink .btn-warning {
   color: var(--col-bg-400) !important;
 }
+
+/* PINK THEME CONFERENCE ROOM */
+body.theme-pink .btn.btn-info {
+  background-color: var(--pink-col-bg-600) !important;
+  border-color: var(--pink-col-bg-700) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-pink .btn.btn-info:hover {
+  background-color: var(--pink-col-bg-700) !important;
+  color: var(--col-light-400) !important;
+  border-color: var(--pink-col-bg-700) !important;
+}
+
+/* PINK THEME VIDEOON DEMAND*/
+body.theme-pink div.list-group-item {
+  background-color: var(--pink-col-bg-400) !important;
+}
+
+/*PINK THEME PROFILE STYLES */
+body.theme-pink .form-control {
+  background-color: var(--pink-col-bg-300) !important;
+  color: var(--col-bg-400) !important;
+  border: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .form-control[disabled] {
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+/*body.theme-pink .btn-primary {
+  color: var(--col-acc-600) !important;
+  background-color: var(--pink-col-bg-500) !important;
+  border: 1px solid var(--pink-col-bg-700) !important;
+}*/
+
+/*PINK THEME CAPTAINS LOG*/
+body.theme-pink #captains_log_alert {
+  background-color: var(--pink-col-bg-300) !important;
+  border-bottom: 1px solid var(--pink-col-bg-700) !important;
+  filter: drop-shadow(0 0 -1px var(--pink-col-bg-600)) !important;
+}
+body.theme-pink #captains_log_alert > a {
+  color: var(--col-acc-600) !important;
+}
+body.theme-pink .alert-success {
+  background-color: var(--pink-col-bg-300) !important;
+  border-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .tt-menu {
+  background-color: var(--pink-col-bg-400) !important;
+  border: 1px solid var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .tt-suggestion:hover {
+  background-color: var(--pink-col-bg-400) !important;
+  cursor: pointer;
+}
+
+body.theme-pink .tokenfield .token {
+  background-color: var(--pink-col-bg-300) !important;
+  border: 1px solid var(--pink-col-bg-700) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .tokenfield .token:hover {
+  background-color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .tokenfield .token .close {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-pink .clean.well.gray {
+  background-color: var(--pink-col-bg-400) !important;
+  border: none !important;
+}
+
+/* PINK THEME EVALUATION STYLES */
+
+body.theme-pink pre {
+  background-color: var(--pink-col-bg-400) !important;
+  border: none !important;
+  filter: drop-shadow(0 0 1px var(--pink-col-bg-700)) !important;
+}
+
+body.theme-pink .evaluation-quiz > .header .level1 {
+  background-color: var(--pink-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+  box-shadow: 0 5px 5px var(--pink-col-bg-700);
+}
+
+body.theme-pink .evaluation-quiz > .header .level1 .center .time-progress .progress {
+  background-color: var(--pink-col-bg-500) !important;
+}
+
+body.theme-pink .evaluation-quiz .question {
+  box-shadow: 0 0 8px var(--pink-col-bg-700);
+  border-radius: 15px !important;
+}
+
+body.theme-pink .evaluation-quiz .question .header {
+  border: none !important;
+  background-color: var(--pink-col-bg-400) !important;
+}
+
+body.theme-pink .evaluation-quiz .question form {
+  border: none !important;
+}
+
+body.theme-pink
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option {
+  padding: 10px !important;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 10px !important;
+}
+
+body.theme-pink
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option:hover {
+  background-color: var(--pink-col-bg-500) !important;
+}
+
+/* PINK THEME PROJECT STYLE*/
+body.theme-pink .well {
+  border: none !important;
+  background-color: var(--pink-col-bg-300) !important;
+}
+
+body.theme-pink .clean.well {
+  background-color: var(--pink-col-bg-300) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-pink .label-info {
+  background-color: var(--pink-col-bg-500) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-pink .task_progress_score_bar {
+  background-color: var(--pink-col-bg-400) !important;
+  border: none !important;
+}
+
+body.theme-pink .task_progress_score_text {
+  color: var(--col-acc-600) !important;
+}
+body.theme-pink .panel-footer {
+  border: none !important;
+  background-color: var(--pink-col-bg-400) !important;
+}
+
+/*body.theme-pink .student_task_done.yes {
+  background-color: var(--col-code-pass) !important;
+}*/
+
+body.theme-pink .task_correction_modal .check-inline {
+  color: var(--pink-col-bg-700) !important;
+}
+
+body.theme-pink .check-inline.requirement.success,
+body.theme-pink .timeline-event.passed.requirement {
+  background-color: var(--col-requirement-pass) !important;
+}
+
+body.theme-pink .check-inline.code.success,
+body.theme-pink .timeline-event.passed.code {
+  background-color: var(--col-code-pass) !important;
+}
+
+body.theme-pink .check-inline.efficiency.success,
+body.theme-pink .timeline-event.passed.efficiency {
+  background-color: var(--col-efficiency-success) !important;
+}
+
+body.theme-pink .check-inline.answer.success,
+body.theme-pink .timeline-event.passed.answer {
+  background-color: var(--col-answer-success) !important;
+}
+
+/* Second deadline styles starts here */
+body.theme-pink .list-group-item.in_second_deadline {
+  background-color: var(--col-second-deadline) !important;
+}
+
+body.theme-pink .list-group-item.in_second_deadline a {
+  color: var(--col-bg-400) !important;
+}
+
+/* PINK THEME QUIZ STYLES */
+body.dark
+  .alert-info
+  + .quiz_questions_show_container
+  input:checked
+  ~ label
+  *:is(code) {
+  background-color: var(--pink-col-bg-400) !important;
+}
+
+body.theme-pink .alert-info + .quiz_questions_show_container input:checked ~ label * {
+  color: var(--col-quiz-pass) !important;
+}
+
+
+
