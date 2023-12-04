@@ -6,12 +6,12 @@
     font-family: poppins;
 }
 .container {
-    background-color: #ccc;
+    background-color: #eef5ff;
 
     border-radius: 8px;
 }
 .card-body{
-    background-color: #ccc;
+    background-color: #eef5ff;
 }
 
 .card-title {
@@ -38,15 +38,15 @@
     cursor: pointer;
     transition: border 0.3s ease-in-out;
 }
-.brown {
-    background-color: #654365;
+.grey {
+    background-color: #776b5d;
 }
 
-.light-green {
+.green {
     background-color: #90EE90;
 }
 
-.midnight-blue {
+.navy-blue {
     background-color: #191970;
 }
 .black {
@@ -55,8 +55,8 @@
 .teal {
     background-color: #008080;
 }
-.dark-blue {
-    background-color: #00008B;
+.ocean-blue {
+    background-color: #00A9FF;
 }
 .purple {
     background-color: #800080;
@@ -64,17 +64,17 @@
 .pink{
     background-color: #FFC0CB;
 }
-.light-blue {
-    background-color: #ADD8E6;
+.orange {
+    background-color: #C63D2F;
 }
 .yellow {
     background-color: #FFFF00;
 }
-.white {
-    background-color: #FFFFFF;
+.red{
+    background-color: #FF6666;
 }
 .beige {
-    background-color: #F5F5DC;
+    background-color: #64642e;
 }
 #color-name {
     margin-top: 8px;
