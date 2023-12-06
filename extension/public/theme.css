@@ -2284,8 +2284,8 @@ body.theme-navy-blue .text-muted {
 }
 
 body.theme-navy-blue .alert-info {
-  background-color: var(--navy-blue-col-bg-800) !important;
-  color: var(--col-acc-600) !important;
+  background-color: var(--navy-blue-col-bg-700) !important;
+  color: var(--col-acc-500) !important;
   border: none !important;
 }
 
@@ -2709,7 +2709,7 @@ body.theme-navy-blue .task_progress_score_bar {
 }
 
 body.theme-navy-blue .task_progress_score_text {
-  color: var(--col-acc-600) !important;
+  color: var(--col-acc-400) !important;
 }
 body.theme-navy-blue .panel-footer {
   border: none !important;
