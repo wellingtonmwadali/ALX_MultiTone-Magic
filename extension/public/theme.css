@@ -84,11 +84,11 @@
   --grey-col-bg-800: #5d3404;
 
   /*TEAL THEME*/
-  --teal-col-bg-400: #b9eddd;
-  --teal-col-bg-500: #87cbb9;
-  --teal-col-bg-600: #569daa;
-  --teal-col-bg-700: #577d86;
-  --teal-col-bg-800: #067189;
+  --teal-col-bg-400: #dcfbfb;
+  --teal-col-bg-500: #8aced0;
+  --teal-col-bg-600: rgb(141, 208, 209);
+  --teal-col-bg-700: #41babc;
+  --teal-col-bg-800: #2d9596;
 
   /* Background color for current date on the Events Calendar */
   --pink-col-current-date: #d5f9adf2;
@@ -2727,5 +2727,634 @@ body.theme-navy-blue
 }
 
 body.theme-navy-blue .alert-info + .quiz_questions_show_container input:checked ~ label * {
+  color: var(--col-quiz-pass) !important;
+}
+
+/*----------------------------------------------------------------------------------------------------------*/
+/*TEAL THEME*/
+body.theme-teal {
+  background-color: var(--teal-col-bg-700);
+}
+
+body.theme-teal main{
+  background-color: var(--teal-col-bg-700);
+}
+
+body.theme-teal hr{
+  border-color: var(--teal-col-bg-800);
+}
+
+body.theme-teal table > thead {
+  background-color: var(--teal-col-bg-600) !important;
+  border-bottom: 1px solid var(--col-bg-800) !important;
+}
+
+body.theme-teal #search-bar::placeholder {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-teal .alert-danger {
+  background-color: var(--teal-col-bg-500) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .field_with_errors {
+  color: var(--col-acc-500) !important;
+}
+
+body.theme-teal #student-switch-curriculum {
+  background-color: var(--teal-col-bg-600) !important;
+}
+
+/* Login*/
+body.theme-teal .logged_out_form {
+  background-color: var(--teal-col-bg-500) !important;
+  border: 1px solid var(--teal-col-bg-800) !important;
+  box-shadow: 0 0 var(--col-bg-clear) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .hbtn_logo {
+  filter: invert(1);
+  transform: rotate(0deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  11% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* TEAL THEME NAVIGATION STYLES */
+body.theme-teal .logo-container {
+  background-color: var(--teal-col-bg-600) !important;
+  border-right: none !important;
+  border-bottom-color: var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .sidebar > ul > li:last-child {
+  background-color: var(--teal-col-bg-600) !important;
+  border-right: none !important;
+  border-top-color: var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .sidebar {
+  background-color: var(--teal-col-bg-600) !important;
+  border-right: none !important;
+  box-shadow: 0 0 1px 5px var(--teal-col-bg-700);
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal.logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.theme-teal .navbar-header {
+  background-color: var(--teal-col-bg-600) !important;
+  filter: drop-shadow(0 0 5px var(--teal-col-bg-600));
+}
+
+body.theme-teal .navbar {
+  border: none !important;
+}
+
+body.theme-teal .navbar-toggle {
+  border-color: var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .navbar-default .navbar-toggle:hover,
+body.theme-teal .navbar-default .navbar-toggle:focus {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .icon-bar {
+  background-color: var(--col-bg-600) !important;
+}
+
+body.theme-teal .navbar-collapse {
+  background-color: var(--teal-col-bg-500) !important;
+  border-top: none !important;
+}
+
+body.theme-teal .nav.navbar-nav {
+  margin-top: 0 !important;
+}
+
+body.theme-teal .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 5px;
+  transform: rotate(45deg) translateY(100%);
+}
+
+body.theme-teal .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+body.theme-teal .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  bottom: 4px;
+  transform: rotate(-45deg) translateY(-100%);
+}
+
+body.theme-teal .navigation > ul > li a .image,
+body.theme-teal .navigation > ul > li a .icon {
+  transition: background-color 200ms ease, color 200ms ease, transition 200ms;
+}
+
+body.theme-teal .discord {
+  transition: transform 300ms ease-in-out, background-color 300ms ease !important;
+}
+
+body.theme-teal .navbar-fixed-top > .navigation > ul > li {
+  margin: 0 !important;
+}
+
+body.theme-teal .navbar-fixed-top > .navigation > ul > li > a {
+  padding: 13px 13px !important;
+}
+
+/* TEAL MAIN STYLES */
+body.theme-teal .user-select-none {
+  box-shadow: 0 0 10px 2px var(--col-light-500) !important;
+}
+
+body.theme-teal .list-group-item {
+  border: none !important;
+}
+
+body.theme-teal a.list-group-item {
+  color: var(--col-acc-600) !important;
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal button.list-group-item {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-teal .panel li.list-group-item {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .list-group-item {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .text-muted {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .alert-info {
+  background-color: var(--teal-col-bg-700) !important;
+  color: var(--col-acc-500) !important;
+  border: none !important;
+}
+
+body.theme-teal .label-default {
+  background-color: var(--col-quiz-pass) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.theme-teal .panel-default > .panel-heading {
+  border-bottom: 1px solid var(--teal-col-bg-800) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .panel-group > .panel-default:first-child > .panel-heading {
+  border: none !important;
+}
+
+body.theme-teal .panel-heading {
+  background-color: var(--teal-col-bg-400) !important;
+  border: none !important;
+}
+
+body.theme-teal .panel {
+  box-shadow: 2px 2px 1px 1px var(--teal-col-bg-500) !important;
+  background-color: var(--teal-col-bg-400) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .panel-title {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal i.panel-title-icon {
+  background-color: var(--teal-col-bg-400) !important;
+  border: none !important;
+}
+
+body.theme-teal .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: none !important;
+}
+body.theme-teal .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .table > thead > tr > th {
+  border-bottom: none !important;
+}
+
+body.theme-teal .modal-content {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .modal-body #search-error-message {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal a {
+  transition: color 200ms ease;
+}
+
+body.theme-teal .modal-footer {
+  border-top: 1px solid var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal a:hover {
+  color: var(--col-acc-600) !important;
+  text-decoration: none !important;
+}
+
+body.theme-teal .close {
+  color: var(--col-acc-600) !important;
+  opacity: 1;
+}
+
+body.theme-teal .close:hover {
+  color: var(--col-light-500) !important;
+}
+
+/* TEAL THEME EVENTS SECTION */
+
+body.theme-teal .nav-tabs {
+  border-bottom: 1px solid var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .nav-tabs > li > a:hover{
+  border: 1px solid var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .nav > li > a {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-acc-600);
+}
+
+body.theme-teal .nav > li > a:hover {
+  background-color: var(--teal-col-bg-800) !important;
+  color: var(--col-acc-500);
+}
+
+body.theme-teal .nav-tabs > li.active > a {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .btn-default {
+  background-color: var(--teal-col-bg-400) !important;
+  border: 1px solid var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .btn-default:hover .fa {
+  background-color: var(--teal-col-bg-800) !important;
+  color: var(--col-acc-500) !important;
+}
+
+body.theme-teal button.btn-default {
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-teal .task-card .btn-default:hover .fa {
+  border: none !important;
+}
+
+/* TEAL THEME PLANNING SECTION */
+
+body.theme-teal .dhx_cal_container {
+  background-color: var(--teal-col-bg-400) !important;
+  filter: drop-shadow(0 1px 2px var(--teal-col-bg-800)) !important;
+}
+
+body.theme-teal .dhx_now .dhx_month_body {
+  background-color: var(--pink-col-current-date) !important;
+}
+
+body.theme-teal .dhx_now .dhx_month_head {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .dhx_before .dhx_month_body {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .dhx_after .dhx_month_body {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .dhx_after .dhx_month_head {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .dhx_month_head {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+  border-right-color: var(--teal-col-bg-600);
+}
+
+body.theme-teal .dhx_month_body {
+  background-color: var(--teal-col-bg-400) !important;
+  border-right: 1px solid var(--teal-col-bg-600) !important;
+  border-bottom: 1px solid var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_cal_navline {
+  background-color: var(--teal-col-bg-600);
+}
+
+body.theme-teal .dhx_cal_navline div {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .dhx_cal_prev_button,
+body.theme-pink .dhx_cal_next_button {
+  filter: invert(1);
+}
+
+body.theme-teal .dhx_cal_today_button {
+  border-color: var(--teal-col-bg-700) !important;
+}
+
+body.theme-teal .dhx_cal_navline .dhx_cal_tab.active,
+body.theme-teal .dhx_cal_navline .dhx_cal_my_button.active {
+  background-color: var(--col-acc-400) !important;
+  border-color: var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .dhx_cal_tab {
+  border-color: var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_cal_my_button {
+  border-color: var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_scale_bar {
+  background-color: var(--teal-col-bg-600) !important;
+  color: var(--col-li) !important;
+  border-left-color: var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_cal_header {
+  border: 1px solid var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_cal_event_line,
+body.theme-teal .dhx_cal_event_clear,
+body.theme-teal .dhx_body,
+body.theme-teal .dhx_title,
+body.theme-teal .dhx_footer {
+  color: var(--col-light-400) !important;
+  text-shadow: 0 0 10px #000;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  ) !important;
+}
+
+/* TEAL THEME EVENTS SECTION */
+body.theme-teal .event {
+  color: var(--col-acc-600) !important;
+}
+
+/* TEAL DAILY & WEEKLY VIEW */
+body.theme-teal .dhx_scale_bar {
+  background-color: var(--teal-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+  border-left: 1px solid var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .dhx_multi_day {
+  background-color: var(--teal-col-bg-400) !important;
+  border-top: 1px solid var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_multi_day_icon {
+  background-color: var(--teal-col-bg-600) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--teal-col-bg-800) !important;
+  border-right: 1px solid var(--teal-col-bg-800) !important;
+}
+
+body.theme-teal .dhx_multi_day_icon_small {
+  background-color: var(--teal-col-bg-600) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--teal-col-bg-600) !important;
+  border-right: 1px solid var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_scale_holder_now {
+  border-right: 1px solid var(--col-acc-600) !important;
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .dhx_scale_holder {
+  background-color: var(--teal-col-bg-400) !important;
+  background-blend-mode: multiply;
+  border-right: 1px solid var(--teal-col-bg-600) !important;
+}
+
+body.theme-teal .dhx_scale_hour {
+  background-color: var(--teal-col-bg-600) !important;
+  border-bottom: 1px solid var(--teal-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+}
+
+/* TEAL THEME SANDBOX STYLES */
+body.theme-teal .btn-danger {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .btn-warning {
+  color: var(--col-bg-400) !important;
+}
+
+/* TEAL THEME CONFERENCE ROOM */
+body.theme-teal .btn.btn-info {
+  background-color: var(--teal-col-bg-500) !important;
+  border-color: var(--teal-col-bg-800) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-teal .btn.btn-info:hover {
+  background-color: var(--teal-col-bg-700) !important;
+  color: var(--col-light-400) !important;
+  border-color: var(--teal-col-bg-800) !important;
+}
+
+/* TEAL THEME VIDEO ON DEMAND*/
+body.theme-teal div.list-group-item {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+/* TEAL THEME PROFILE STYLES */
+body.theme-teal .form-control {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+  border: 1px solid var(--teal-col-bg-700) !important;
+}
+
+body.theme-teal .form-control[disabled] {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+/* TEAL THEME CAPTAINS LOG */
+body.theme-teal #captains_log_alert {
+  background-color: var(--teal-col-bg-400) !important;
+  border-bottom: 1px solid var(--teal-col-bg-700) !important;
+  filter: drop-shadow(0 0 -1px var(--teal-col-bg-600)) !important;
+}
+
+body.theme-teal #captains_log_alert > a {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .alert-success {
+  background-color: var(--teal-col-bg-400) !important;
+  border-color: var(--teal-col-bg-700) !important;
+}
+
+body.theme-teal .tt-menu {
+  background-color: var(--teal-col-bg-400) !important;
+  border: 1px solid var(--teal-col-bg-700) !important;
+}
+
+body.theme-teal .tt-suggestion:hover {
+  background-color: var(--teal-col-bg-400) !important;
+  cursor: pointer;
+}
+
+body.theme-teal .tokenfield .token {
+  background-color: var(--teal-col-bg-400) !important;
+  border: 1px solid var(--teal-col-bg-700) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .tokenfield .token:hover {
+  background-color: var(--teal-col-bg-700) !important;
+}
+
+body.theme-teal .tokenfield .token .close {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-teal .clean.well.gray {
+  background-color: var(--teal-col-bg-400) !important;
+  border: none !important;
+}
+
+/* TEAL THEME EVALUATION STYLES */
+
+body.theme-teal pre {
+  background-color: var(--teal-col-bg-400) !important;
+  border: none !important;
+  filter: drop-shadow(0 0 1px var(--teal-col-bg-700)) !important;
+}
+
+body.theme-teal .evaluation-quiz > .header .level1 {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+  box-shadow: 0 5px 5px var(--teal-col-bg-700);
+}
+
+body.theme-teal .evaluation-quiz > .header .level1 .center .time-progress .progress {
+  background-color: var(--teal-col-bg-500) !important;
+}
+
+body.theme-teal .evaluation-quiz .question {
+  box-shadow: 0 0 8px var(--teal-col-bg-700);
+  border-radius: 15px !important;
+}
+
+body.theme-teal .evaluation-quiz .question .header {
+  border: none !important;
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .evaluation-quiz .question form {
+  border: none !important;
+}
+
+body.theme-teal
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option {
+  padding: 10px !important;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 10px !important;
+}
+
+body.theme-teal
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option:hover {
+  background-color: var(--teal-col-bg-500) !important;
+}
+
+/* TEAL THEME PROJECT STYLE*/
+body.theme-teal .well {
+  border: none !important;
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .clean.well {
+  background-color: var(--teal-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-teal .label-info {
+  background-color: var(--teal-col-bg-500) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-teal .task_progress_score_bar {
+  background-color: var(--teal-col-bg-500) !important;
+  border: none !important;
+}
+
+body.theme-teal .task_progress_score_text {
+  color: var(--col-acc-400) !important;
+}
+body.theme-teal .panel-footer {
+  border: none !important;
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+/* TEAL THEME QUIZ STYLES */
+body.theme-teal
+  .alert-info
+  + .quiz_questions_show_container
+  input:checked
+  ~ label
+  *:is(code) {
+  background-color: var(--teal-col-bg-400) !important;
+}
+
+body.theme-teal .alert-info + .quiz_questions_show_container input:checked ~ label * {
   color: var(--col-quiz-pass) !important;
 }
