@@ -319,7 +319,7 @@ body.theme-pink .text-muted {
 
 body.theme-pink .alert-info {
   background-color: var(--pink-col-bg-700) !important;
-  color: var(--col-acc-600) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -751,9 +751,7 @@ body.theme-pink .panel-footer {
   background-color: var(--pink-col-bg-400) !important;
 }
 
-/*body.theme-pink .student_task_done.yes {
-  background-color: var(--col-code-pass) !important;
-}*/
+
 
 body.theme-pink .task_correction_modal .check-inline {
   color: var(--pink-col-bg-700) !important;
@@ -2282,7 +2280,7 @@ body.theme-navy-blue .text-muted {
 
 body.theme-navy-blue .alert-info {
   background-color: var(--navy-blue-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -2911,7 +2909,7 @@ body.theme-teal .text-muted {
 
 body.theme-teal .alert-info {
   background-color: var(--teal-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -3540,7 +3538,7 @@ body.theme-ocean .text-muted {
 
 body.theme-ocean .alert-info {
   background-color: var(--ocean-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -4712,7 +4710,7 @@ body.theme-purple .text-muted {
 
 body.theme-purple .alert-info {
   background-color: var(--purple-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -5286,7 +5284,7 @@ body.theme-orange .text-muted {
 
 body.theme-orange .alert-info {
   background-color: var(--orange-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
@@ -5858,7 +5856,7 @@ body.theme-grey .text-muted {
 
 body.theme-grey .alert-info {
   background-color: var(--grey-col-bg-700) !important;
-  color: var(--col-acc-500) !important;
+  color: var(--col-light-400) !important;
   border: none !important;
 }
 
