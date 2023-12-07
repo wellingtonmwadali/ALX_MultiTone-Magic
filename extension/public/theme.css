@@ -36,7 +36,7 @@
   /*PURPLE THEME*/
   --purple-col-bg-400: #dbcef7;
   --purple-col-bg-500: #ccaafc;
-  --purple-col-bg-600: #bc88fa;
+  --purple-col-bg-600: #cba1fe;
   --purple-col-bg-700: #b362fa;
   --purple-col-bg-800: #8907fa;
 
@@ -4527,5 +4527,579 @@ body.theme-yellow
 }
 
 body.theme-yellow .alert-info + .quiz_questions_show_container input:checked ~ label * {
+  color: var(--col-quiz-pass) !important;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+
+/* PURPLE THEME */
+body.theme-purple {
+  background-color: var(--purple-col-bg-700);
+}
+
+body.theme-purple main {
+  background-color: var(--purple-col-bg-700);
+}
+
+body.theme-purple hr {
+  border-color: var(--purple-col-bg-800);
+}
+
+body.theme-purple table > thead {
+  background-color: var(--purple-col-bg-600) !important;
+  border-bottom: 1px solid var(--col-bg-800) !important;
+}
+
+body.theme-purple #search-bar::placeholder {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-purple .alert-danger {
+  background-color: var(--purple-col-bg-500) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .field_with_errors {
+  color: var(--col-acc-500) !important;
+}
+
+body.theme-purple #student-switch-curriculum {
+  background-color: var(--purple-col-bg-600) !important;
+}
+
+/* Login */
+body.theme-purple .logged_out_form {
+  background-color: var(--purple-col-bg-500) !important;
+  border: 1px solid var(--purple-col-bg-800) !important;
+  box-shadow: 0 0 var(--col-bg-clear) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .hbtn_logo {
+  filter: invert(1);
+  transform: rotate(0deg);
+  animation: flip 5000ms 2000ms ease-in-out forwards infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(360deg);
+  }
+  11% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* PURPLE THEME NAVIGATION STYLES */
+body.theme-purple .logo-container {
+  background-color: var(--purple-col-bg-600) !important;
+  border-right: none !important;
+  border-bottom-color: var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .sidebar > ul > li:last-child {
+  background-color: var(--purple-col-bg-600) !important;
+  border-right: none !important;
+  border-top-color: var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .sidebar {
+  background-color: var(--purple-col-bg-600) !important;
+  border-right: none !important;
+  box-shadow: 0 0 1px 5px var(--purple-col-bg-700);
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple.logo {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body.theme-purple .navbar-header {
+  background-color: var(--purple-col-bg-600) !important;
+  filter: drop-shadow(0 0 5px var(--purple-col-bg-600));
+}
+
+body.theme-purple .navbar {
+  border: none !important;
+}
+
+body.theme-purple .navbar-toggle {
+  border-color: var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .navbar-default .navbar-toggle:hover,
+body.theme-purple .navbar-default .navbar-toggle:focus {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .icon-bar {
+  background-color: var(--col-bg-600) !important;
+}
+
+body.theme-purple .navbar-collapse {
+  background-color: var(--purple-col-bg-500) !important;
+  border-top: none !important;
+}
+
+body.theme-purple .nav.navbar-nav {
+  margin-top: 0 !important;
+}
+
+body.theme-purple .navbar-toggle:not(.collapsed) .icon-bar:nth-child(2) {
+  top: 5px;
+  transform: rotate(45deg) translateY(100%);
+}
+
+body.theme-purple .navbar-toggle:not(.collapsed) .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+body.theme-purple .navbar-toggle:not(.collapsed) .icon-bar:nth-child(4) {
+  bottom: 4px;
+  transform: rotate(-45deg) translateY(-100%);
+}
+
+body.theme-purple .navigation > ul > li a .image,
+body.theme-purple .navigation > ul > li a .icon {
+  transition: background-color 200ms ease, color 200ms ease, transition 200ms;
+}
+
+body.theme-purple .discord {
+  transition: transform 300ms ease-in-out, background-color 300ms ease !important;
+}
+
+body.theme-purple .navbar-fixed-top > .navigation > ul > li {
+  margin: 0 !important;
+}
+
+body.theme-purple .navbar-fixed-top > .navigation > ul > li > a {
+  padding: 13px 13px !important;
+}
+
+/* PURPLE MAIN STYLES */
+body.theme-purple .user-select-none {
+  box-shadow: 0 0 10px 2px var(--col-light-500) !important;
+}
+
+body.theme-purple .list-group-item {
+  border: none !important;
+}
+
+body.theme-purple a.list-group-item {
+  color: var(--col-acc-600) !important;
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple button.list-group-item {
+  color: var(--col-light-500) !important;
+}
+
+body.theme-purple .panel li.list-group-item {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .list-group-item {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .text-muted {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .alert-info {
+  background-color: var(--purple-col-bg-700) !important;
+  color: var(--col-acc-500) !important;
+  border: none !important;
+}
+
+body.theme-purple .label-default {
+  background-color: var(--col-quiz-pass) !important;
+  color: var(--col-light-500) !important;
+}
+
+body.theme-purple .panel-default > .panel-heading {
+  border-bottom: 1px solid var(--purple-col-bg-800) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .panel-group > .panel-default:first-child > .panel-heading {
+  border: none !important;
+}
+
+body.theme-purple .panel-heading {
+  background-color: var(--purple-col-bg-400) !important;
+  border: none !important;
+}
+
+body.theme-purple .panel {
+  box-shadow: 2px 2px 1px 1px var(--purple-col-bg-500) !important;
+  background-color: var(--purple-col-bg-400) !important;
+  border: none !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .panel-title {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple i.panel-title-icon {
+  background-color: var(--purple-col-bg-400) !important;
+  border: none !important;
+}
+
+body.theme-purple .panel-group .panel-heading + .panel-collapse > .list-group {
+  border-top: none !important;
+}
+
+body.theme-purple .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+/* PURPLE THEME EVENTS SECTION */
+body.theme-purple .nav-tabs {
+  border-bottom: 1px solid var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .nav-tabs > li > a:hover {
+  border: 1px solid var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .nav > li > a {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-acc-600);
+}
+
+/* PURPLE THEME */
+body.theme-purple .nav > li > a:hover {
+  background-color: var(--purple-col-bg-800) !important;
+  color: var(--col-acc-500);
+}
+
+body.theme-purple .nav-tabs > li.active > a {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .btn-default {
+  background-color: var(--purple-col-bg-400) !important;
+  border: 1px solid var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .btn-default:hover .fa {
+  background-color: var(--purple-col-bg-800) !important;
+  color: var(--col-acc-500) !important;
+}
+
+body.theme-purple button.btn-default {
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-purple .task-card .btn-default:hover .fa {
+  border: none !important;
+}
+
+/* PURPLE THEME PLANNING SECTION */
+
+body.theme-purple .dhx_cal_container {
+  background-color: var(--purple-col-bg-400) !important;
+  filter: drop-shadow(0 1px 2px var(--purple-col-bg-800)) !important;
+}
+
+body.theme-purple .dhx_now .dhx_month_body {
+  background-color: var(--pink-col-current-date) !important;
+}
+
+body.theme-purple .dhx_now .dhx_month_head {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .dhx_before .dhx_month_body {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .dhx_after .dhx_month_body {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .dhx_after .dhx_month_head {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .dhx_month_head {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+  border-right-color: var(--purple-col-bg-600);
+}
+
+body.theme-purple .dhx_month_body {
+  background-color: var(--purple-col-bg-400) !important;
+  border-right: 1px solid var(--purple-col-bg-600) !important;
+  border-bottom: 1px solid var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_cal_navline {
+  background-color: var(--purple-col-bg-600);
+}
+
+body.theme-purple .dhx_cal_navline div {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .dhx_cal_prev_button,
+body.theme-purple .dhx_cal_next_button {
+  filter: invert(1);
+}
+
+body.theme-purple .dhx_cal_today_button {
+  border-color: var(--purple-col-bg-700) !important;
+}
+
+body.theme-purple .dhx_cal_navline .dhx_cal_tab.active,
+body.theme-purple .dhx_cal_navline .dhx_cal_my_button.active {
+  background-color: var(--col-acc-400) !important;
+  border-color: var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .dhx_cal_tab {
+  border-color: var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_cal_my_button {
+  border-color: var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_scale_bar {
+  background-color: var(--purple-col-bg-600) !important;
+  color: var(--col-li) !important;
+  border-left-color: var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_cal_header {
+  border: 1px solid var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_cal_event_line,
+body.theme-purple .dhx_cal_event_clear,
+body.theme-purple .dhx_body,
+body.theme-purple .dhx_title,
+body.theme-purple .dhx_footer {
+  color: var(--col-light-400) !important;
+  text-shadow: 0 0 10px #000;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  ) !important;
+}
+
+/* PURPLE THEME EVENTS SECTION */
+body.theme-purple .event {
+  color: var(--col-acc-600) !important;
+}
+
+/* PURPLE DAILY & WEEKLY VIEW */
+body.theme-purple .dhx_scale_bar {
+  background-color: var(--purple-col-bg-600) !important;
+  color: var(--col-acc-600) !important;
+  border-left: 1px solid var(--purple-col-bg-800) !important;
+}
+
+body.theme-purple .dhx_multi_day {
+  background-color: var(--purple-col-bg-400) !important;
+  border-top: 1px solid var(--purple-col-bg-600) !important;
+}
+
+body.theme-purple .dhx_multi_day_icon {
+  background-color: var(--purple-col-bg-600) !important;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid var(--purple-col-bg-800) !important;
+  border-right: 1px solid var(--purple-col-bg-800) !important;
+}
+
+/* PURPLE THEME SANDBOX STYLES */
+body.theme-purple .btn-danger {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .btn-warning {
+  color: var(--col-bg-400) !important;
+}
+
+/* PURPLE THEME CONFERENCE ROOM */
+body.theme-purple .btn.btn-info {
+  background-color: var(--purple-col-bg-500) !important;
+  border-color: var(--purple-col-bg-800) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-purple .btn.btn-info:hover {
+  background-color: var(--purple-col-bg-700) !important;
+  color: var(--col-light-400) !important;
+  border-color: var(--purple-col-bg-800) !important;
+}
+
+/* PURPLE THEME VIDEO ON DEMAND */
+body.theme-purple div.list-group-item {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+/* PURPLE THEME PROFILE STYLES */
+body.theme-purple .form-control {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+  border: 1px solid var(--purple-col-bg-700) !important;
+}
+
+body.theme-purple .form-control[disabled] {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+/* PURPLE THEME CAPTAINS LOG */
+body.theme-purple #captains_log_alert {
+  background-color: var(--purple-col-bg-400) !important;
+  border-bottom: 1px solid var(--purple-col-bg-700) !important;
+  filter: drop-shadow(0 0 -1px var(--purple-col-bg-600)) !important;
+}
+
+body.theme-purple #captains_log_alert > a {
+  color: var(--col-acc-600) !important;
+}
+
+/* PURPLE THEME */
+body.theme-purple .alert-success {
+  background-color: var(--purple-col-bg-400) !important;
+  border-color: var(--purple-col-bg-700) !important;
+}
+
+body.theme-purple .tt-menu {
+  background-color: var(--purple-col-bg-400) !important;
+  border: 1px solid var(--purple-col-bg-700) !important;
+}
+
+body.theme-purple .tt-suggestion:hover {
+  background-color: var(--purple-col-bg-400) !important;
+  cursor: pointer;
+}
+
+body.theme-purple .tokenfield .token {
+  background-color: var(--purple-col-bg-400) !important;
+  border: 1px solid var(--purple-col-bg-700) !important;
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .tokenfield .token:hover {
+  background-color: var(--purple-col-bg-700) !important;
+}
+
+body.theme-purple .tokenfield .token .close {
+  color: var(--col-acc-600) !important;
+}
+
+body.theme-purple .clean.well.gray {
+  background-color: var(--purple-col-bg-400) !important;
+  border: none !important;
+}
+
+/* PURPLE THEME EVALUATION STYLES */
+body.theme-purple pre {
+  background-color: var(--purple-col-bg-400) !important;
+  border: none !important;
+  filter: drop-shadow(0 0 1px var(--purple-col-bg-700)) !important;
+}
+
+body.theme-purple .evaluation-quiz > .header .level1 {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+  box-shadow: 0 5px 5px var(--purple-col-bg-700);
+}
+
+body.theme-purple .evaluation-quiz > .header .level1 .center .time-progress .progress {
+  background-color: var(--purple-col-bg-500) !important;
+}
+
+body.theme-purple .evaluation-quiz .question {
+  box-shadow: 0 0 8px var(--purple-col-bg-700);
+  border-radius: 15px !important;
+}
+
+body.theme-purple .evaluation-quiz .question .header {
+  border: none !important;
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .evaluation-quiz .question form {
+  border: none !important;
+}
+
+body.theme-purple
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option {
+  padding: 10px !important;
+  transition: background-color 300ms ease-in-out;
+  border-radius: 10px !important;
+}
+
+body.theme-purple
+  .evaluation-quiz
+  .question
+  form
+  .answer-option-container
+  .answer-option:hover {
+  background-color: var(--purple-col-bg-500) !important;
+}
+
+/* PURPLE THEME PROJECT STYLE */
+body.theme-purple .well {
+  border: none !important;
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .clean.well {
+  background-color: var(--purple-col-bg-400) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-purple .label-info {
+  background-color: var(--purple-col-bg-500) !important;
+  color: var(--col-bg-400) !important;
+}
+
+body.theme-purple .task_progress_score_bar {
+  background-color: var(--purple-col-bg-500) !important;
+  border: none !important;
+}
+
+body.theme-purple .task_progress_score_text {
+  color: var(--col-acc-400) !important;
+}
+
+body.theme-purple .panel-footer {
+  border: none !important;
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+/* PURPLE THEME QUIZ STYLES */
+body.theme-purple
+  .alert-info
+  + .quiz_questions_show_container
+  input:checked
+  ~ label
+  *:is(code) {
+  background-color: var(--purple-col-bg-400) !important;
+}
+
+body.theme-purple .alert-info + .quiz_questions_show_container input:checked ~ label * {
   color: var(--col-quiz-pass) !important;
 }
