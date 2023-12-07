@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "ALX_MultiTone-Magic",
-    "version": "1.0.0",
+    "version": "1.5.0",
     "description": "Change Intranet webpage colors ",
     "permissions": [
       "activeTab",
