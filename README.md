@@ -1,4 +1,4 @@
-Certainly! Below is an updated version of your extension documentation with placeholders for images in the overview and a video in the features section:
+
 
 ---
 
@@ -8,35 +8,55 @@ Certainly! Below is an updated version of your extension documentation with plac
 
 The Multi-Theme Selector extension allows users to customize the theme of the ALX Intranet by choosing from a variety of color themes that is  `pink`, `green`, `navy-blue`, `black`, `teal`, `ocean-blue`, `purple`, `pink`, `orange`, `yellow` and `grey`.
 
-![Extension Overview](./icons/large.png)
+![Extension Overview](./extension/public/icons/large.png)
 
 ### 🌟 The Marvel of Themes 🌟
 "Pink" - Embrace Your Inner Barbie!
 Let the shades of pink immerse you in a world of elegance and joy, reminiscent of your childhood fantasies!
 
+![Pink](./extension/screenshot/pink.png)
+
 "Green" - Feel the Earth's Serenity!
 Connect with nature through lush green hues that evoke the tranquility of forests and meadows!
+
+![Green](./extension/screenshot/green.png)
 
 "Ocean" - Dive into Oceanic Depths!
 Experience the refreshing blues of the ocean, taking you on a calming journey amidst the waves!
 
+![Ocean](./extension/screenshot/blue.png)
+
 "Black" - Sleek and Elegant!
 The timeless black theme adds a touch of sophistication and modernity to your browsing!
+
+![Black](./extension/screenshot/black.png)
+
 
 "Teal" - Enchanting and Sophisticated!
 The blend of blue and green brings forth a sophisticated yet vibrant aura.
 
+![Teal](./extension/screenshot/teal.png)
+
 "Purple" - Indulge in Royal Elegance!
 Elevate your browsing experience with rich purples that evoke a sense of regal refinement!
+
+![Purple](./extension/screenshot/purple.png)
 
 "Orange" - Radiate Positivity!
 Bask in the warmth and radiance of vibrant oranges, sparking energy and enthusiasm!
 
+![Orange](./extension/screenshot/orange.png)
+
+
 "Yellow" - Embrace Sunshine and Happiness!
 Let the brilliance of yellow brighten your day, bringing in joy and positivity!
 
+![Yellow](./extension/screenshot/yellow.png)
+
 "Grey" - Chic and Minimalistic!
 For those who prefer a sleek and minimalist vibe, grey offers understated elegance!
+
+![Grey](./extension/screenshot/grey.png)
 
 ## 🚀 Installation Process 🚀
 
