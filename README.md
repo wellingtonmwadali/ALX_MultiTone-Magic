@@ -85,7 +85,21 @@ For those who prefer a sleek and minimalist vibe, grey offers understated elegan
 
 ### Contribution
 
+### **Steps**
+
+1. [Fork](https://github.com/wellingtonmwadali/ALX_MultiTone-Magic/fork/) this project
+2. [Clone](git clone https://github.com/wellingtonmwadali/ALX_MultiTone-Magic.git) your forked version
+3. Make changes
+4. Create a [branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#working-with-branches)
+5. [Commit](https://help.github.com/articles/adding-a-file-to-a-repository-using-the-command-line/) your changes (write a short descriptive message of what you have done)
+6. [Push](https://help.github.com/articles/pushing-to-a-remote/) your changes to your forked version
+7. Go to the original project on GitHub & Create a [Pull Request](https://help.github.com/articles/about-pull-requests/)
+
+
 - Contribute to the development of the extension on [GitHub](https://github.com/wellingtonmwadali/ALX_MultiTone-Magic/).
+
+## DONE 🥳
+
 
 ### Watch the Video
 
