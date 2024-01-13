@@ -1,7 +1,19 @@
 // content.js
 
+// List of all possible themes
+const themes = ['defaultTheme', 'theme-red', 'theme-green', 'theme-navy-blue','theme-black','theme-teal',
+'theme-ocean','theme-purple','theme-pink','theme-orange', 'theme-yellow','theme-grey'];
+
+
+// Function to remove all theme classes
+function removeThemes() {
+    themes.forEach(theme => document.body.classList.remove(theme));
+}
+
+// Updated applyTheme function
 function applyTheme(theme) {
     if (theme) {
+        removeThemes();
         document.body.classList.add(`theme-${theme}`);
     } else {
         console.log("Error in loading theme");
@@ -20,12 +32,11 @@ chrome.storage.local.get(['currentTheme'], function(result) {
     applyTheme(result.currentTheme);
 });
 
-// Function to update extension state
+// Updated function to update extension state
 function updateExtensionState(isEnabled) {
     if (!isEnabled) {
         // Clear any applied theme when the extension is disabled
-        document.body.classList.remove('defaultTheme', 'theme-red', 'theme-green', 'theme-navy-blue','theme-black','theme-teal',
-        'theme-ocean','theme-purple','theme-pink','theme-orange', 'theme-yellow','theme-grey');
+        removeThemes();
     }
 }
 
@@ -38,10 +49,3 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 // Assume the initial extension state is enabled
 updateExtensionState(true);
-
-
-
-
-
-
-
