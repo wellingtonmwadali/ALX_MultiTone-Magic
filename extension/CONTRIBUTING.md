@@ -14,7 +14,7 @@ If something doesn't make sense please ask for clarification or assistance by wr
 
 ## Pull Requests
 
-Before submitting a PR that relates directly to an issue, please write a comment on the relevant issue letting me know you'd like to take it on. Once the issue has been claimed the 'in progress' label will be added.
+Before submitting a PR that relates directly to an issue, please write a comment on the relevant issue letting me know you'd like to take it on. Once the issue has been claimed the 'in progress' label will be added. After long periods of inactivity, I'll remove the 'in progress' label so someone else can work on it.
 
 If you've never submitted a pull request before then I would recommend you check out this guide: [Step-by-step guide to contributing on GitHub](https://www.dataschool.io/how-to-contribute-on-github/)
 
