@@ -6,7 +6,7 @@
 
 ## Overview
 
-The Multi-Theme Selector extension allows users to customize the theme of the ALX Intranet by choosing from a variety of color themes that is  `pink`, `green`, `navy-blue`, `black`, `teal`, `ocean-blue`, `purple`, `pink`, `orange`, `yellow` and `grey`.
+The Multi-Tone Magic extension offers users a delightful customization experience for the ALX AFRICA Intranet, the premier learning platform for ALX_AFRICA. With a simple click, users can access a vibrant array of color themes, ranging from classic navy-blue to refreshing teal and everything in between, including pink, green, black, ocean-blue, purple, orange, yellow, and sleek grey. This intuitive pop-up window empowers users to tailor their browsing experience to their unique preferences, enhancing both usability and aesthetic appeal.
 
 ![Extension Overview](./extension/public/icons/large.png)
 
